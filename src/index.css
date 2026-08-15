@@ -1,0 +1,32 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #FAF6EE;
+  color: #2A2420;
+}
+
+/* Foco visible global — accesibilidad */
+:focus-visible {
+  outline: 2px solid #C81E1E;
+  outline-offset: 2px;
+}
+
+/* Skip link para lectores de pantalla */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  background: #C81E1E;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  z-index: 9999;
+  text-decoration: none;
+}
+.skip-link:focus { left: 8px; }
+
+/* Imágenes responsive */
+img { max-width: 100%; height: auto; }

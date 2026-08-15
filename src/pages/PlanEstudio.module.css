@@ -1,0 +1,139 @@
+/* ── Page shell ── */
+.page { padding: 28px 24px 60px; background: #FAF6EE; min-height: 100vh; }
+
+.pageHeader { margin-bottom: 20px; }
+.pageTitle  { font-size: 1.5rem; font-weight: 800; color: #2A2420; margin: 0 0 4px; }
+.pageMeta   { font-size: .8rem; color: #7a7266; margin: 0; }
+
+/* ── Area filters ── */
+.filtros {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-bottom: 18px; align-items: center;
+}
+.filtroBtn {
+  font-size: .75rem; font-weight: 700;
+  padding: 5px 12px; border-radius: 20px;
+  border: 2px solid transparent;
+  cursor: pointer; font-family: inherit;
+  opacity: .75; transition: opacity .15s, border-color .15s;
+}
+.filtroBtn:hover    { opacity: 1; }
+.filtroBtnActive    { opacity: 1; border-color: #2A2420; }
+.filtroCount {
+  display: inline-block; margin-left: 5px;
+  background: rgba(0,0,0,.12);
+  padding: 0 5px; border-radius: 10px; font-size: .68rem;
+}
+.filtroClear {
+  font-size: .75rem; padding: 5px 12px; border-radius: 20px;
+  border: 1.5px solid #C81E1E; background: none;
+  color: #C81E1E; cursor: pointer; font-family: inherit;
+  font-weight: 700;
+}
+.filtroClear:hover { background: #C81E1E; color: white; }
+
+/* ── Info box (selected materia) ── */
+.infoBox {
+  background: white; border: 1.5px solid #C81E1E;
+  border-radius: 10px; padding: 12px 16px;
+  margin-bottom: 16px; display: flex;
+  flex-direction: column; gap: 6px;
+  animation: slideIn .2s ease;
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.infoMain { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.infoSigla {
+  font-size: .72rem; font-weight: 800;
+  padding: 2px 8px; border-radius: 5px;
+}
+.infoMain strong { font-size: .95rem; color: #2A2420; }
+.infoSem { font-size: .75rem; color: #7a7266; }
+.infoElectiva {
+  font-size: .68rem; background: #D4A544; color: #1A1410;
+  font-weight: 700; padding: 1px 7px; border-radius: 5px;
+}
+.infoRelaciones { display: flex; flex-direction: column; gap: 3px; font-size: .8rem; }
+.infoPrereq  { color: #2f6b1a; }
+.infoDep     { color: #8B5200; }
+.infoNeutral { color: #a39a8c; font-style: italic; }
+
+/* ── Malla grid ── */
+.mallaWrapper { overflow-x: auto; }
+.malla {
+  display: grid;
+  grid-template-columns: repeat(11, minmax(130px, 1fr));
+  gap: 8px;
+  min-width: 1350px;
+}
+
+.col { display: flex; flex-direction: column; gap: 5px; }
+.semLabel {
+  font-size: .68rem; font-weight: 700; text-align: center;
+  background: #8B1414; color: white;
+  padding: 5px 2px; border-radius: 6px; margin-bottom: 3px;
+}
+
+/* ── Chips ── */
+.chip {
+  display: flex; flex-direction: column; gap: 2px;
+  font-size: .65rem; line-height: 1.25;
+  padding: 7px 8px; border-radius: 7px;
+  border: 2px solid transparent;
+  cursor: pointer; font-family: inherit;
+  text-align: left; position: relative;
+  transition: transform .12s ease, opacity .2s ease, box-shadow .15s ease;
+}
+.chip:hover { transform: translateY(-2px); }
+
+.chipSigla  { font-weight: 800; opacity: .7; font-size: .6rem; }
+.chipNombre { font-weight: 500; }
+.chipElectiva {
+  position: absolute; top: 4px; right: 5px;
+  font-size: .55rem; font-weight: 800;
+  background: #D4A544; color: #1A1410;
+  padding: 0 4px; border-radius: 3px;
+}
+
+/* ── Chip states ── */
+.chipSelected {
+  border-color: #C81E1E !important;
+  box-shadow: 0 0 0 3px rgba(200,30,30,.25);
+  transform: translateY(-2px);
+}
+.chipPrereq {
+  border-color: #3a7d1e !important;
+  box-shadow: 0 0 0 2px rgba(58,125,30,.2);
+}
+.chipDep {
+  border-color: #b85c00 !important;
+  box-shadow: 0 0 0 2px rgba(184,92,0,.2);
+}
+.chipDimmed { opacity: .28; }
+
+/* ── Area colors ── */
+.area_instrumental   { background: #B7E1A4; }
+.area_especifica     { background: #FCE5A0; }
+.area_aplicada       { background: #F6C9DD; }
+.area_complementaria { background: #C6CFE6; }
+.area_conclusion     { background: #F7F27A; }
+
+/* ── Leyenda ── */
+.leyenda {
+  display: flex; flex-wrap: wrap; gap: 10px 18px;
+  font-size: .72rem; color: #7a7266;
+  margin-top: 20px; padding-top: 14px;
+  border-top: 1px solid #E4DACB;
+}
+.leyendaItem { display: flex; align-items: center; gap: 5px; }
+.swatch { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+.swatchE {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 16px; height: 16px; border-radius: 3px;
+  background: #D4A544; color: #1A1410;
+  font-size: .55rem; font-weight: 800;
+}
+
+.hint { font-size: .75rem; color: #b8ac9a; text-align: center; margin-top: 14px; font-style: italic; }

@@ -1,0 +1,77 @@
+.sidebar {
+  position: fixed; left: 0; top: 0; bottom: 0; z-index: 150;
+  background: #1A1410;
+  display: flex; flex-direction: column;
+  transition: width .25s ease;
+  overflow: hidden;
+  box-shadow: 2px 0 16px rgba(0,0,0,.35);
+}
+.expanded  { width: 210px; }
+.collapsed { width: 56px; }
+
+/* Focus visible global para el sidebar */
+.sidebar *:focus-visible {
+  outline: 2px solid #D4A544;
+  outline-offset: 2px;
+}
+
+.toggle {
+  align-self: flex-end;
+  background: none; border: none;
+  color: #D4A544; font-size: .8rem;
+  padding: 12px 14px; cursor: pointer;
+  transition: color .15s;
+}
+.toggle:hover { color: #FAF6EE; }
+
+.logoWrap {
+  display: flex; align-items: center; gap: 10px;
+  padding: 0 10px 20px;
+}
+.logo {
+  width: 36px; height: 36px;
+  border-radius: 50%; flex-shrink: 0;
+  border: 1.5px solid #C81E1E;
+}
+.brand {
+  font-size: .72rem; font-weight: 700;
+  color: #FAF6EE; line-height: 1.2;
+  white-space: nowrap;
+}
+
+nav { display: flex; flex-direction: column; gap: 2px; padding: 0 6px; }
+
+.item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 8px; border-radius: 8px;
+  color: #c4b8a8; text-decoration: none;
+  font-size: .82rem; font-weight: 500;
+  transition: background .15s, color .15s;
+  white-space: nowrap;
+}
+.item:hover:not(.soon) { background: rgba(200,30,30,.15); color: #FAF6EE; }
+.active { background: rgba(200,30,30,.22); color: #FAF6EE; }
+.soon   { opacity: .5; cursor: not-allowed; }
+
+.icon   { font-size: 1.1rem; flex-shrink: 0; width: 22px; text-align: center; }
+.label  { display: flex; align-items: center; gap: 6px; }
+.badge  {
+  font-size: .58rem; font-weight: 700;
+  background: #D4A544; color: #1A1410;
+  padding: 1px 5px; border-radius: 4px;
+  text-transform: uppercase; letter-spacing: .3px;
+}
+
+/* ── Mobile: sidebar oculto por defecto, drawer al abrirse ── */
+@media (max-width: 767px) {
+  .sidebar {
+    top: 52px; /* debajo del top bar */
+    width: 220px !important;
+    transform: translateX(-100%);
+    transition: transform .25s ease;
+  }
+  .mobileVisible {
+    transform: translateX(0);
+  }
+  .toggle { display: none; } /* el toggle de colapsar no tiene sentido en mobile */
+}

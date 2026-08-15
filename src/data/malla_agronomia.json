@@ -1,0 +1,85 @@
+{
+  "carrera": "Ingeniería Agronómica",
+  "plan": "153-3",
+  "resolucion": "Nº 14/2015",
+  "facultad": "FCA-UAGRM",
+  "areas": [
+    { "id": "instrumental",   "nombre": "Área Básica Instrumental",    "color": "#B7E1A4", "totalDeclarado": 18 },
+    { "id": "especifica",     "nombre": "Área Básica Específica",       "color": "#FCE5A0", "totalDeclarado": 15 },
+    { "id": "aplicada",       "nombre": "Área Específica Aplicada",     "color": "#F6C9DD", "totalDeclarado": 13 },
+    { "id": "complementaria", "nombre": "Área Complementaria",          "color": "#C6CFE6", "totalDeclarado": 4  },
+    { "id": "conclusion",     "nombre": "Conclusión del Plan de Estudios","color": "#F7F27A","totalDeclarado": 1 }
+  ],
+  "semestresEspeciales": {
+    "10": "Electivas",
+    "11": "Modalidad"
+  },
+  "materias": [
+    { "sigla": "AGR121", "nombre": "Agricultura General",              "semestre": 1,  "area": "instrumental",   "prerrequisitos": [] },
+    { "sigla": "BOT101", "nombre": "Botánica General",                 "semestre": 1,  "area": "instrumental",   "prerrequisitos": [] },
+    { "sigla": "DRS131", "nombre": "Sociología Rural",                 "semestre": 1,  "area": "complementaria", "prerrequisitos": [] },
+    { "sigla": "FIS101", "nombre": "Física General",                   "semestre": 1,  "area": "instrumental",   "prerrequisitos": [] },
+    { "sigla": "MAT101", "nombre": "Cálculo I",                        "semestre": 1,  "area": "instrumental",   "prerrequisitos": [] },
+    { "sigla": "QMC101", "nombre": "Química General",                  "semestre": 1,  "area": "instrumental",   "prerrequisitos": [] },
+
+    { "sigla": "BOT102", "nombre": "Botánica Sistemática",             "semestre": 2,  "area": "instrumental",   "prerrequisitos": ["BOT101"] },
+    { "sigla": "DRS132", "nombre": "Metodología de la Investigación",  "semestre": 2,  "area": "instrumental",   "prerrequisitos": ["DRS131"] },
+    { "sigla": "INA111", "nombre": "Química Agrícola",                 "semestre": 2,  "area": "especifica",     "prerrequisitos": ["QMC101"] },
+    { "sigla": "INA112", "nombre": "Topografía",                       "semestre": 2,  "area": "instrumental",   "prerrequisitos": ["FIS101"] },
+    { "sigla": "MAT102", "nombre": "Cálculo Aplicado",                 "semestre": 2,  "area": "instrumental",   "prerrequisitos": ["MAT101"] },
+    { "sigla": "MAT103", "nombre": "Informática Aplicada",             "semestre": 2,  "area": "instrumental",   "prerrequisitos": ["MAT101"] },
+
+    { "sigla": "AGR221", "nombre": "Fisiología Vegetal",               "semestre": 3,  "area": "instrumental",   "prerrequisitos": ["AGR121", "BOT102", "INA111"] },
+    { "sigla": "INA211", "nombre": "Edafología",                       "semestre": 3,  "area": "instrumental",   "prerrequisitos": ["FIS101", "INA111"] },
+    { "sigla": "INA212", "nombre": "Agroclimatología",                 "semestre": 3,  "area": "instrumental",   "prerrequisitos": ["FIS101"] },
+    { "sigla": "INA213", "nombre": "Construcciones Agropecuarias",     "semestre": 3,  "area": "especifica",     "prerrequisitos": ["INA112", "MAT102"] },
+    { "sigla": "MAT201", "nombre": "Estadística",                      "semestre": 3,  "area": "instrumental",   "prerrequisitos": ["DRS132", "MAT103"] },
+    { "sigla": "PRA241", "nombre": "Zootecnia I",                      "semestre": 3,  "area": "especifica",     "prerrequisitos": ["INA111"] },
+
+    { "sigla": "AGR222", "nombre": "Entomología General",              "semestre": 4,  "area": "instrumental",   "prerrequisitos": ["AGR221"] },
+    { "sigla": "AGR223", "nombre": "Microbiología y Fitopatología",    "semestre": 4,  "area": "instrumental",   "prerrequisitos": ["AGR221"] },
+    { "sigla": "AGR224", "nombre": "Manejo de Malezas",                "semestre": 4,  "area": "instrumental",   "prerrequisitos": ["BOT102", "AGR221"] },
+    { "sigla": "INA214", "nombre": "Maquinaria Agrícola",              "semestre": 4,  "area": "especifica",     "prerrequisitos": ["FIS101", "INA211"] },
+    { "sigla": "INA215", "nombre": "Fertilidad de Suelos",             "semestre": 4,  "area": "especifica",     "prerrequisitos": ["INA211", "INA212"] },
+    { "sigla": "INA216", "nombre": "Diseños Experimentales",           "semestre": 4,  "area": "especifica",     "prerrequisitos": ["MAT201"] },
+    { "sigla": "PRA242", "nombre": "Agrostología y Conservación de Forrajes", "semestre": 4, "area": "especifica", "prerrequisitos": ["PRA241"] },
+
+    { "sigla": "AGR321", "nombre": "Olericultura",                     "semestre": 5,  "area": "especifica",     "prerrequisitos": ["AGR222"] },
+    { "sigla": "AGR322", "nombre": "Manejo Integrado de Enfermedades", "semestre": 5,  "area": "especifica",     "prerrequisitos": ["AGR223"] },
+    { "sigla": "AGR323", "nombre": "Manejo Integrado de Plagas",       "semestre": 5,  "area": "especifica",     "prerrequisitos": ["AGR222"] },
+    { "sigla": "DRS331", "nombre": "Administración Agropecuaria",      "semestre": 5,  "area": "complementaria", "prerrequisitos": ["DRS132", "PRA242"] },
+    { "sigla": "INA311", "nombre": "Sistema de Información Geográfica","semestre": 5,  "area": "especifica",     "prerrequisitos": ["MAT201"] },
+    { "sigla": "PRA341", "nombre": "Zootecnia II",                     "semestre": 5,  "area": "aplicada",       "prerrequisitos": ["INA213", "PRA242"] },
+
+    { "sigla": "AGR324", "nombre": "Cultivos I",                       "semestre": 6,  "area": "aplicada",       "prerrequisitos": ["AGR224", "AGR322", "AGR323"] },
+    { "sigla": "AGR325", "nombre": "Genética",                         "semestre": 6,  "area": "instrumental",   "prerrequisitos": ["INA216", "AGR321"] },
+    { "sigla": "DRS332", "nombre": "Economía Agrícola",                "semestre": 6,  "area": "complementaria", "prerrequisitos": ["DRS331"] },
+    { "sigla": "DRS333", "nombre": "Extensión Agrícola",               "semestre": 6,  "area": "complementaria", "prerrequisitos": ["DRS331"] },
+    { "sigla": "INA312", "nombre": "Manejo y Conservación de Suelos",  "semestre": 6,  "area": "aplicada",       "prerrequisitos": ["INA215"] },
+    { "sigla": "INA313", "nombre": "Hidráulica Agrícola",              "semestre": 6,  "area": "instrumental",   "prerrequisitos": ["MAT102", "INA214"] },
+
+    { "sigla": "AGR421", "nombre": "Fruticultura",                     "semestre": 7,  "area": "aplicada",       "prerrequisitos": ["AGR324"] },
+    { "sigla": "AGR422", "nombre": "Cultivos II",                      "semestre": 7,  "area": "aplicada",       "prerrequisitos": ["AGR324"] },
+    { "sigla": "AGR423", "nombre": "Fitomejoramiento",                 "semestre": 7,  "area": "especifica",     "prerrequisitos": ["AGR325"] },
+    { "sigla": "DRS431", "nombre": "Elaboración de Proyectos Agropecuarios", "semestre": 7, "area": "aplicada",  "prerrequisitos": ["DRS332"] },
+    { "sigla": "INA411", "nombre": "Riegos y Drenajes",                "semestre": 7,  "area": "especifica",     "prerrequisitos": ["INA312", "INA313"] },
+
+    { "sigla": "AGR424", "nombre": "Tecnología de Semillas",           "semestre": 8,  "area": "especifica",     "prerrequisitos": ["AGR421", "AGR422", "AGR423"] },
+    { "sigla": "DRS432", "nombre": "Seminario Agroproductivo",         "semestre": 8,  "area": "aplicada",       "prerrequisitos": ["DRS431"] },
+    { "sigla": "DRS433", "nombre": "Agroecología",                     "semestre": 8,  "area": "aplicada",       "prerrequisitos": ["INA312"] },
+    { "sigla": "INA412", "nombre": "Diseño de Métodos de Riego",       "semestre": 8,  "area": "especifica",     "prerrequisitos": ["INA411"] },
+    { "sigla": "TGL451", "nombre": "Proyecto de Grado",                "semestre": 8,  "area": "aplicada",       "prerrequisitos": ["INA216", "DRS431"] },
+
+    { "sigla": "TGL551", "nombre": "Prácticas Pre Profesionales Supervisadas", "semestre": 9, "area": "conclusion", "prerrequisitos": ["AGR424", "DRS432", "DRS433", "INA412", "TGL451"] },
+
+    { "sigla": "AGR521", "nombre": "Biotecnología",                    "semestre": 10, "area": "especifica",     "prerrequisitos": ["AGR423"],          "electiva": "Electiva 2" },
+    { "sigla": "DRS531", "nombre": "Derecho Agrario",                  "semestre": 10, "area": "aplicada",       "prerrequisitos": ["DRS333"],          "electiva": "Electiva 4" },
+    { "sigla": "DRS532", "nombre": "Planificación y Gestión Agropecuaria", "semestre": 10, "area": "aplicada",   "prerrequisitos": ["DRS333", "DRS431"],"electiva": "Electiva 3" },
+    { "sigla": "INA511", "nombre": "Gestión Ambiental y Territorial",  "semestre": 10, "area": "aplicada",       "prerrequisitos": ["INA311", "INA312"],"electiva": "Electiva 1" },
+    { "sigla": "PRA541", "nombre": "Conservación de Alimentos y Alimentación", "semestre": 10, "area": "aplicada","prerrequisitos": ["PRA341"],         "electiva": "Electiva 5" },
+    { "sigla": "PRA542", "nombre": "Sanidad y Reproducción Animal",    "semestre": 10, "area": "aplicada",       "prerrequisitos": ["PRA341"],          "electiva": "Electiva 6" },
+
+    { "sigla": "GDI001", "nombre": "Graduación Directa",               "semestre": 11, "area": "conclusion",     "prerrequisitos": ["AGR424"] },
+    { "sigla": "GRL001", "nombre": "Trabajo de Grado",                 "semestre": 11, "area": "conclusion",     "prerrequisitos": ["TGL451"] }
+  ]
+}

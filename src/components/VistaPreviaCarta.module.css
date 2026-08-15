@@ -1,0 +1,18 @@
+.doc {
+  background: white; border: 1px solid #E4DACB;
+  border-radius: 10px; padding: 34px 38px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: .82rem; line-height: 1.55; color: #1a1a1a;
+  box-shadow: 0 4px 20px rgba(0,0,0,.06);
+}
+.fecha { margin-bottom: 18px; }
+.dest { margin-bottom: 4px; }
+.ref { margin: 16px 0; font-weight: 700; font-size: .82rem; }
+.placeholder { color: #bbb; font-style: italic; }
+
+table { width: 100%; border-collapse: collapse; margin: 14px 0 18px; font-size: .74rem; }
+th, td { border: 1px solid #999; padding: 6px 7px; text-align: center; }
+th { background: #eee; font-weight: 700; }
+
+.firma { margin-top: 34px; }
+.firma strong { display: block; margin-top: 2px; }

@@ -1,0 +1,2908 @@
+{
+  "carrera": "Ingeniería Agronómica",
+  "gestion": "2-2026",
+  "plan": "153-3",
+  "semestres": [
+    {
+      "semestre": 1,
+      "grupos": [
+        {
+          "grupo": "A",
+          "materias": {
+            "BOT101": {
+              "materia": "BOTANICA GENERAL",
+              "docente": "FERGUSSON DE URIOSTE MARG"
+            },
+            "FIS101": {
+              "materia": "FISICA GENERAL",
+              "docente": "CALVIMONTES PALACIOS FIDEL"
+            },
+            "MAT101": {
+              "materia": "CALCULO I",
+              "docente": "CHURQUE BERRIOS FELIPE"
+            },
+            "QMC101": {
+              "materia": "QUIMICA GENERAL",
+              "docente": "SANDOVAL HIDALGO DAVID CAR"
+            },
+            "AGR121": {
+              "materia": "AGRICULTURA GENER",
+              "docente": "PRADA CESPEDES GUALBERTO"
+            },
+            "DRS131": {
+              "materia": "SOCIOLOGIA RURAL",
+              "docente": "SALAS VELASCO MARIA TERESA"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "MAT101",
+              "aula": "AULA 616-14",
+              "inicio": "08:30",
+              "fin": "10:45"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "FIS101",
+              "aula": "AULA 616-14",
+              "inicio": "10:45",
+              "fin": "13:00"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "FIS101-A1",
+              "aula": "LAB 613-06",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "DRS131",
+              "aula": "AULA 616-14",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "AGR121",
+              "aula": "AULA 616-14",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "FIS101-A2",
+              "aula": "LAB 613-06",
+              "inicio": "16:00",
+              "fin": "17:30"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "BOT101",
+              "aula": "AULA 616-14",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "MAT101",
+              "aula": "AULA 616-14",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "QMC101-A6",
+              "aula": "LAB 615-03",
+              "inicio": "11:30",
+              "fin": "13:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "BOT101-A1",
+              "aula": "612-11",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "BOT101",
+              "aula": "AULA 616-14",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "QMC101",
+              "aula": "AULA 616-14",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "BOT101-A2",
+              "aula": "LAB 612-11",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "QMC101",
+              "aula": "AULA 616-14",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "DRS131",
+              "aula": "AULA 616-14",
+              "inicio": "10:00",
+              "fin": "12:15"
+            }
+          ]
+        },
+        {
+          "grupo": "B",
+          "materias": {
+            "BOT101": {
+              "materia": "BOTANICA GENERAL",
+              "docente": "RIVERA FERRUFINO ROBERTO"
+            },
+            "FIS101": {
+              "materia": "FISICA GENERAL",
+              "docente": "LAZO MENDIETA ELTAN"
+            },
+            "MAT101": {
+              "materia": "CALCULO I",
+              "docente": "MOSTACEDO CALATAYUD BONIF"
+            },
+            "QMC101": {
+              "materia": "QUIMICA GENERAL",
+              "docente": "CHAVEZ MARANON JOSE ANTO"
+            },
+            "AGR121": {
+              "materia": "AGRICULTURA GENE",
+              "docente": "PRADA CESPEDES GUALBERTO"
+            },
+            "DRS131": {
+              "materia": "SOCIOLOGIA RURAL",
+              "docente": "RODRIGUEZ MENDEZ NELSON"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "AGR121",
+              "aula": "AULA 616-13",
+              "inicio": "10:45",
+              "fin": "13:00"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "BOT101",
+              "aula": "AULA 616-13",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "QMC101",
+              "aula": "AULA 616-13",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "AGR121",
+              "aula": "AULA 616-13",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "FIS101",
+              "aula": "AULA 616-13",
+              "inicio": "11:30",
+              "fin": "13:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "DRS131",
+              "aula": "AULA 616-13",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "MAT101",
+              "aula": "AULA 616-13",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "BOT101",
+              "aula": "AULA 616-13",
+              "inicio": "11:30",
+              "fin": "13:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "DRS131",
+              "aula": "AULA 616-13",
+              "inicio": "13:00",
+              "fin": "15:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "FIS101-B2",
+              "aula": "LAB 613-06",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "FIS101-B1",
+              "aula": "LAB 613-06",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "MAT101",
+              "aula": "AULA 616-13",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "QMC101-B1",
+              "aula": "LAB 615-03",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "QMC101-B2",
+              "aula": "LAB 615-03",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "QMC101",
+              "aula": "AULA 616-13",
+              "inicio": "14:30",
+              "fin": "16:00"
+            }
+          ]
+        },
+        {
+          "grupo": "C",
+          "materias": {
+            "BOT101": {
+              "materia": "BOTANICA GENERAL",
+              "docente": "RIVERA FERRUFINO ROBERTO"
+            },
+            "FIS101": {
+              "materia": "FISICA GENERAL",
+              "docente": "CALVIMONTES PALACIOS FIDEL"
+            },
+            "MAT101": {
+              "materia": "CALCULO I",
+              "docente": "FLORES LLAMPA RUBEN"
+            },
+            "QMC101": {
+              "materia": "QUIMICA GENERAL",
+              "docente": "BOZO DE VON LANDWUST NORAH"
+            },
+            "AGR121": {
+              "materia": "AGRICULTURA GENE",
+              "docente": "RODRIGUEZ CRESPO FLORIAN"
+            },
+            "DRS131": {
+              "materia": "SOCIOLOGIA RURAL",
+              "docente": "SALAS VELASCO MARIA TERESA"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "BOT101",
+              "aula": "AULA 616-16",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "DRS131",
+              "aula": "AULA 616-16",
+              "inicio": "10:00",
+              "fin": "12:15"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "QMC101",
+              "aula": "AULA 616-16",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "BOT101",
+              "aula": "AULA 616-16",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "QMC101-C2",
+              "aula": "LAB 615-03",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "QMC101-C1",
+              "aula": "LAB 615-03",
+              "inicio": "11:30",
+              "fin": "13:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "MAT101",
+              "aula": "AULA 616-16",
+              "inicio": "08:30",
+              "fin": "10:45"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "QMC101",
+              "aula": "AULA 616-16",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "FIS101",
+              "aula": "AULA 616-16",
+              "inicio": "08:30",
+              "fin": "10:45"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "DRS131",
+              "aula": "AULA 616-16",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "FIS101-C1",
+              "aula": "LAB 613-06",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "FIS101-C2",
+              "aula": "LAB 613-06",
+              "inicio": null,
+              "fin": null
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "MAT101",
+              "aula": "616-17",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "AGR121",
+              "aula": "616-16",
+              "inicio": "13:00",
+              "fin": "15:15"
+            }
+          ]
+        },
+        {
+          "grupo": "D",
+          "materias": {
+            "BOT101": {
+              "materia": "BOTANICA GENERAL",
+              "docente": "QUIROGA CASTRO HENRY"
+            },
+            "FIS101": {
+              "materia": "FISICA GENERAL",
+              "docente": "RIOS MONTES ROSSIO"
+            },
+            "MAT101": {
+              "materia": "CALCULO I",
+              "docente": "ALEJO LAMAS ERLAN"
+            },
+            "QMC101": {
+              "materia": "QUIMICA GENERAL",
+              "docente": "AVENDANO GONZALES EUDAL"
+            },
+            "AGR121": {
+              "materia": "AGRICULTURA GENERAL",
+              "docente": "RODRIGUEZ CRESPO FLORIAN"
+            },
+            "DRS131": {
+              "materia": "SOCIOLOGIA RURAL",
+              "docente": "HERRERA DE PINTO SANDRA"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "AGR121",
+              "aula": null,
+              "inicio": "13:00",
+              "fin": "13:45"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "BOT101",
+              "aula": "AULA 616-17",
+              "inicio": "16:45",
+              "fin": "18:15"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "FIS101-D2",
+              "aula": "LAB 613-06",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "FIS101-D1",
+              "aula": "LAB 613-06",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "QMC101",
+              "aula": "AULA 616-17",
+              "inicio": "08:30",
+              "fin": "10:45"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "QMC101-D2",
+              "aula": "LAB 615-03",
+              "inicio": "11:30",
+              "fin": "13:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "MAT101",
+              "aula": null,
+              "inicio": "13:45",
+              "fin": "14:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "DRS131",
+              "aula": null,
+              "inicio": "08:30",
+              "fin": "09:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "FIS101",
+              "aula": "AULA 616-17",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "BOT101",
+              "aula": "AULA 616-17",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "MAT101",
+              "aula": "AULA 616-17",
+              "inicio": "16:45",
+              "fin": "18:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "QMC101-D1",
+              "aula": "LAB 615-03",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "BOT101-D1",
+              "aula": "LAB 612-11",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "BOT101-D2",
+              "aula": "LAB 612-11",
+              "inicio": "16:45",
+              "fin": "18:15"
+            }
+          ]
+        },
+        {
+          "grupo": "E",
+          "materias": {
+            "AGR121": {
+              "materia": "AGRICULTURA GENERAL",
+              "docente": "RODRIGUEZ CRESPO FLORIAN"
+            },
+            "DRS131": {
+              "materia": "SOCIOLOGIA RURAL",
+              "docente": "SALAS VELASCO MARIA TERESA"
+            }
+          },
+          "clases": [
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "DRS131",
+              "aula": "AULA 616-18",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "AGR121",
+              "aula": null,
+              "inicio": "07:45",
+              "fin": "08:30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semestre": 2,
+      "grupos": [
+        {
+          "grupo": "A",
+          "materias": {
+            "MAT102": {
+              "materia": "CALCULO APLICADO",
+              "docente": "FLORES LLAMPA RUBEN"
+            },
+            "BOT102": {
+              "materia": "BOTANICA SISTEMATICA",
+              "docente": "FERGUSSON DE URIOSTE MAR"
+            },
+            "DRS132": {
+              "materia": "METODOLOGIA DE INVESTIG",
+              "docente": "NAVIA TRIGO LUIS FELIPE"
+            },
+            "INA111": {
+              "materia": "QUIMICA AGRICOLA",
+              "docente": "SANDOVAL HIDALGO DAVID"
+            },
+            "INA112": {
+              "materia": "TOPOGRAFIA",
+              "docente": "CALVIMONTES PALACIOS FIDEL"
+            },
+            "MAT103": {
+              "materia": "INFORMATICA APLICADA",
+              "docente": "SANCHEZ RIVERA RAMIRO G"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "INA112",
+              "aula": "AULA 610-14",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "DRS132",
+              "aula": "AULA 610-14",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "MAT102",
+              "aula": "610-14",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "BOT102",
+              "aula": "AULA 610-14",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "BOT102-A1",
+              "aula": "LAB 612-10",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "BOT102-A2",
+              "aula": "LAB 612-10",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "MAT103",
+              "aula": "SALA DE COMPUTO",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "MAT103",
+              "aula": "SALA DE COMPUTO",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "MAT102",
+              "aula": null,
+              "inicio": "11:30",
+              "fin": "12:15"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "MAT102",
+              "aula": "AULA 610-14",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "INA111",
+              "aula": "AULA 610-14",
+              "inicio": "11:30",
+              "fin": "13:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "INA112",
+              "aula": null,
+              "inicio": "15:15",
+              "fin": "16:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AUXILIATRURA",
+              "aula": null,
+              "inicio": "16:00",
+              "fin": "17:30"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA111",
+              "aula": "AULA 610-14",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA111",
+              "aula": "LAB 615-04",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA112",
+              "aula": null,
+              "inicio": "14:30",
+              "fin": "15:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "AUXILIATURA",
+              "aula": null,
+              "inicio": "15:15",
+              "fin": "16:00"
+            }
+          ]
+        },
+        {
+          "grupo": "B",
+          "materias": {
+            "MAT102": {
+              "materia": "CALCULO APLICADO",
+              "docente": "AVENDANO GONZALES EUDAL"
+            },
+            "BOT102": {
+              "materia": "BOTANICA SISTEMATICA",
+              "docente": "LOPEZ MERUVIA MERCY JANE"
+            },
+            "DRS132": {
+              "materia": "METODOLOGIA DE INVESTIG",
+              "docente": "NAVIA TRIGO LUIS FELIPE"
+            },
+            "INA111": {
+              "materia": "QUIMICA AGRICOLA",
+              "docente": "BOZO DE VON LANDWUST NO"
+            },
+            "INA112": {
+              "materia": "TOPOGRAFIA",
+              "docente": "DURAN ARANCIBIA MIGUEL"
+            },
+            "MAT103": {
+              "materia": "INFORMATICA APLICADA",
+              "docente": "MORGAN NAVA GRACE ISABEL"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "INA111",
+              "aula": "AULA 610-15",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "BOT102",
+              "aula": "LAB 612-04",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "MAT103",
+              "aula": "SALA DE COMP",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "INA112",
+              "aula": "AULA 610-15",
+              "inicio": "16:00",
+              "fin": "17:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "INA112",
+              "aula": null,
+              "inicio": "10:00",
+              "fin": "10:45"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AUXILIATURA",
+              "aula": null,
+              "inicio": "10:45",
+              "fin": "11:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "DRS132",
+              "aula": "AULA 610-15",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "MAT102",
+              "aula": "AULA 610-15",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "MAT102",
+              "aula": "AULA 610-15",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA112",
+              "aula": null,
+              "inicio": "16:00",
+              "fin": "16:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "AUXILIATURA",
+              "aula": null,
+              "inicio": "16:45",
+              "fin": "17:30"
+            }
+          ]
+        },
+        {
+          "grupo": "C",
+          "materias": {
+            "MAT102": {
+              "materia": "CALCULO APLICADO",
+              "docente": "VARGAS ALBA HERIBERTO"
+            },
+            "BOT102": {
+              "materia": "BOTANICA SISTEMATICA",
+              "docente": "RIVERA FERRUFINO ROBERTO"
+            },
+            "DRS132": {
+              "materia": "METODOLOGIA DE INVESTIG",
+              "docente": "MOSTACEDO CALATAYUD BO"
+            },
+            "INA111": {
+              "materia": "QUIMICA AGRICOLA",
+              "docente": "BOZO DE VON LANDWUST NO"
+            },
+            "INA112": {
+              "materia": "TOPOGRAFIA",
+              "docente": "VARGAS ALBA HERIBERTO"
+            },
+            "MAT103": {
+              "materia": "INFORMATICA APLICADA",
+              "docente": "MORGAN NAVA GRACE ISABEL"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "MAT103",
+              "aula": "SALA DE COMPUTO",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "INA112",
+              "aula": "AULA 610-15",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA111",
+              "aula": "AULA 616-17",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA112",
+              "aula": null,
+              "inicio": "12:15",
+              "fin": "13:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "AUXILIAT",
+              "aula": null,
+              "inicio": "13:00",
+              "fin": "13:45"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "BOT102-C2",
+              "aula": "LAB 612-10",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "MAT102",
+              "aula": "AULA 610-07",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "INA111",
+              "aula": "616-16",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "BOT102",
+              "aula": "AULA 610-03",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "MAT102",
+              "aula": "AULA 610-07",
+              "inicio": "10:45",
+              "fin": "12:15"
+            }
+          ]
+        },
+        {
+          "grupo": "D",
+          "materias": {
+            "MAT102": {
+              "materia": "CALCULO APLICADO",
+              "docente": "FLORES LLAMPA RUBEN"
+            },
+            "BOT102": {
+              "materia": "BOTANICA SISTEMATICA",
+              "docente": "SALDIAS PAZ MARIO"
+            },
+            "DRS132": {
+              "materia": "METODOLOGIA DE INVESTIG",
+              "docente": "BAZZOLI HAQUIN EDUARDO"
+            },
+            "MAT103": {
+              "materia": "INFORMATICA APLICADA",
+              "docente": "SANCHEZ RIVERA RAMIRO"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "MAT103",
+              "aula": "SALA DE COMPUTO",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "DRS132",
+              "aula": null,
+              "inicio": "11:30",
+              "fin": "12:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "BOT102",
+              "aula": "AULA 610-10",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "BOT102",
+              "aula": "LAB 612-10",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "SABADO",
+              "materia_sigla": "MAT102",
+              "aula": "AULA 610-15",
+              "inicio": "10:00",
+              "fin": "11:30"
+            }
+          ]
+        },
+        {
+          "grupo": "E",
+          "materias": {
+            "BOT102": {
+              "materia": "BOTANICA SISTEMATICA",
+              "docente": "LOPEZ MERUVIA MERCY JANE"
+            },
+            "MAT103": {
+              "materia": "INFORMATICA APLICADA",
+              "docente": "MORGAN NAVA GRACE ISABEL"
+            }
+          },
+          "clases": [
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "BOT102",
+              "aula": "LAB 612-04",
+              "inicio": "11:30",
+              "fin": "13:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "MAT103",
+              "aula": "SALA DE COM",
+              "inicio": "10:00",
+              "fin": "12:15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semestre": 3,
+      "grupos": [
+        {
+          "grupo": "A",
+          "materias": {
+            "AGR221": {
+              "materia": "FISIOLOGIA VEGETAL",
+              "docente": "OTERO OUTUMURO TRIGO MARIA"
+            },
+            "INA211": {
+              "materia": "EDAFOLOGIA",
+              "docente": "SALAS VELASCO MARIA TERESA"
+            },
+            "INA212": {
+              "materia": "AGROCLIMATOLOGIA",
+              "docente": "CAMPOS ESCOBAR JOSE WALTER"
+            },
+            "INA213": {
+              "materia": "CONSTRUCCIONES AGRO",
+              "docente": "ALAIZA DE ACHA EDUARDO"
+            },
+            "MAT201": {
+              "materia": "ESTADISTICA",
+              "docente": "MORGAN NAVA GRACE ISABEL"
+            },
+            "PRA241": {
+              "materia": "ZOOTECNIA I",
+              "docente": "CAMACHO RIOJA MARIA DEISY"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "INA213",
+              "aula": "AULA 616-15",
+              "inicio": "07:45",
+              "fin": "09:15"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "PRA241",
+              "aula": "AULA 610-07",
+              "inicio": "10:45",
+              "fin": "12:16"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "PRA241",
+              "aula": "AULA 610-07",
+              "inicio": "07:00",
+              "fin": "08:30"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA212",
+              "aula": "AULA 610-15",
+              "inicio": "10:00",
+              "fin": "11:31"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "MAT201",
+              "aula": "SALA DE COMPUTO",
+              "inicio": "11:31",
+              "fin": "13:01"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA211-A1",
+              "aula": "LAB 615-01",
+              "inicio": "13:01",
+              "fin": "14:31"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "INA211",
+              "aula": "AULA 610-14",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "INA212",
+              "aula": "AULA 610-15",
+              "inicio": "10:45",
+              "fin": "12:16"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR221",
+              "aula": "AULA 610-03",
+              "inicio": "14:31",
+              "fin": "16:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR221-A1",
+              "aula": "LAB 612-11",
+              "inicio": "16:45",
+              "fin": "18:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR221-A2",
+              "aula": "LAB 612-11",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "INA211-A2",
+              "aula": "LAB 615-01",
+              "inicio": "13:01",
+              "fin": "14:31"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "INA211-A3",
+              "aula": "LAB 615-01",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "MAT201",
+              "aula": "610-14",
+              "inicio": "08:30",
+              "fin": "10:45"
+            }
+          ]
+        },
+        {
+          "grupo": "B",
+          "materias": {
+            "AGR221": {
+              "materia": "FISIOLOGIA VEGETAL",
+              "docente": "FLORES LLAMPA RUBEN"
+            },
+            "INA211": {
+              "materia": "EDAFOLOGIA",
+              "docente": "POR DESIGNAR"
+            },
+            "INA212": {
+              "materia": "AGROCLIMATOLOGIA",
+              "docente": "ALAIZA DE ACHA EDUARDO"
+            },
+            "INA213": {
+              "materia": "CONSTRUCCIONES AGRO",
+              "docente": "ALAIZA DE ACHA EDUARDO"
+            },
+            "MAT201": {
+              "materia": "ESTADISTICA",
+              "docente": "MORGAN NAVA GRACE ISABEL"
+            },
+            "PRA241": {
+              "materia": "ZOOTECNIA I",
+              "docente": "POR DESIGNAR"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "INA213",
+              "aula": "AULA 616-15",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "INA212",
+              "aula": "AULA 610-03",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA211-B2",
+              "aula": "LAB 615-01",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA211-B1",
+              "aula": "LAB 615-01",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "MAT201",
+              "aula": "SALA DE COMPUTO",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA211",
+              "aula": "AULA 610-14",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "PRA241",
+              "aula": "AULA 616-14",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR221-B1",
+              "aula": "LAB 612-11",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR221-B2",
+              "aula": "LAB 612-11",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR221",
+              "aula": "AULA 610-07",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "MAT201",
+              "aula": "610-14",
+              "inicio": "13:00",
+              "fin": "14:30"
+            }
+          ]
+        },
+        {
+          "grupo": "C",
+          "materias": {
+            "AGR221": {
+              "materia": "FISIOLOGIA VEGETAL",
+              "docente": "ESPINOZA MORENO JORGE"
+            },
+            "INA211": {
+              "materia": "EDAFOLOGIA",
+              "docente": "JUSTINIANO VACA HERME"
+            },
+            "INA212": {
+              "materia": "AGROCLIMATOLOGIA",
+              "docente": "AGUILERA SANDOVAL GLADYS"
+            },
+            "INA213": {
+              "materia": "CONSTRUCCIONES AGRO",
+              "docente": "DURAN ARANCIBIA MIGUEL"
+            },
+            "MAT201": {
+              "materia": "ESTADISTICA",
+              "docente": "CAMPOS ESCOBAR JOSE WAL"
+            },
+            "PRA241": {
+              "materia": "ZOOTECNIA I",
+              "docente": "CAMACHO RIOJA MARIA DEISY"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "PRA241",
+              "aula": "AULA 610-07",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "AGR221",
+              "aula": "AULA 610-03",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "AGR221-C1",
+              "aula": "LAB 612-10",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "INA211",
+              "aula": "AULA 610-10",
+              "inicio": "16:00",
+              "fin": "17:30"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "PRA241",
+              "aula": "AULA 610-07",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "MAT201",
+              "aula": "AULA 616-18",
+              "inicio": "11:30",
+              "fin": "13:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "INA212",
+              "aula": "AULA 610-15",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "MAT201",
+              "aula": "AULA 616-18",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA212",
+              "aula": "AULA 610-15",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA211-C1",
+              "aula": "LAB 615-01",
+              "inicio": "16:00",
+              "fin": "17:30"
+            },
+            {
+              "dia": "SABADO",
+              "materia_sigla": "INA213",
+              "aula": "AULA 610-14",
+              "inicio": "07:45",
+              "fin": "09:15"
+            }
+          ]
+        },
+        {
+          "grupo": "D",
+          "materias": {
+            "INA213": {
+              "materia": "CONSTRUCCIONES AGRO",
+              "docente": "CALVIMONTES PALACIOS FID"
+            },
+            "MAT201": {
+              "materia": "ESTADISTICA",
+              "docente": "KORIYAMA VERA MARCO CLE"
+            }
+          },
+          "clases": [
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA213",
+              "aula": "AULA 616-15",
+              "inicio": "11:30",
+              "fin": "13:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "MAT201",
+              "aula": "AULA 610-03",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "MAT201",
+              "aula": "AULA 610-03",
+              "inicio": "08:30",
+              "fin": "10:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semestre": 4,
+      "grupos": [
+        {
+          "grupo": "A",
+          "materias": {
+            "AGR222": {
+              "materia": "ENTOMOLOGIA GENERAL",
+              "docente": "VARGAS ROJAS MATEO"
+            },
+            "AGR223": {
+              "materia": "MICROBIOLOGIA Y FITO",
+              "docente": "LANGUIDEY JUSTINIANO DE ANTE"
+            },
+            "AGR224": {
+              "materia": "MANEJO DE MALEZAS",
+              "docente": "POR DESIGNAR"
+            },
+            "INA214": {
+              "materia": "MAQUINARIA AGRICOLA",
+              "docente": "PRADA MERCADO FRANKLIN MOI"
+            },
+            "INA215": {
+              "materia": "FERTILIDAD DE SUELOS",
+              "docente": "RIVERA FERRUFINO ROBERTO"
+            },
+            "INA216": {
+              "materia": "DISENOS EXPERIMENTALES",
+              "docente": "KORIYAMA VERA MARCO CLETO"
+            },
+            "PRA242": {
+              "materia": "AGROSTOLOGIA Y CONSERV.",
+              "docente": "CAMPOS ESCOBAR JOSE WALTER"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "PRA242",
+              "aula": "AULA 616-18",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "AGR224",
+              "aula": "AULA 610-08",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "INA216",
+              "aula": "AULA 610-02",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA214",
+              "aula": "AULA 616-15",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA214",
+              "aula": "TALLER",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA215",
+              "aula": "AULA 616-14",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA215-A1",
+              "aula": "LAB 615-01",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR223-A1",
+              "aula": "MOD ADM",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR223",
+              "aula": "AULA 610-10",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR223-A2",
+              "aula": "MOD ADM",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR224",
+              "aula": "AULA 610-08",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR222",
+              "aula": "AULA 616-13",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR222-A1",
+              "aula": "LAB 613-08",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR222-A3",
+              "aula": "LAB 613-08",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR222-A2",
+              "aula": "LAB 613-08",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "PRA242",
+              "aula": "AULA 616-18",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA216",
+              "aula": "AULA 610-02",
+              "inicio": "14:30",
+              "fin": "16:00"
+            }
+          ]
+        },
+        {
+          "grupo": "B",
+          "materias": {
+            "AGR222": {
+              "materia": "ENTOMOLOGIA GENERAL",
+              "docente": "VARGAS ROJAS MATEO"
+            },
+            "AGR223": {
+              "materia": "MICROBIOLOGIA Y FITO",
+              "docente": "RIVADENEIRA MICHEL CARLOS"
+            },
+            "AGR224": {
+              "materia": "MANEJO DE MALEZAS",
+              "docente": "POR DESIGNAR"
+            },
+            "INA214": {
+              "materia": "MAQUINARIA AGRICOLA",
+              "docente": "SALGADO ROMERO TEOFILO"
+            },
+            "INA215": {
+              "materia": "FERTILIDAD DE SUELOS",
+              "docente": "POR DESIG/DAVID SANDOVAL HIDALGO"
+            },
+            "PRA242": {
+              "materia": "AGROSTOLOGIA Y CONSERV. FO",
+              "docente": "CAMPOS ESCOBAR JOSE WALTER"
+            },
+            "INA216": {
+              "materia": "DISENOS EXPERIMENTALES",
+              "docente": "KORIYAMA VERA MARCO CLETO"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "INA215-B2",
+              "aula": "LAB 615-01",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "INA215-B1",
+              "aula": "LAB 615-01",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "AGR222",
+              "aula": "AULA 616-14",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "AGR222-B1",
+              "aula": "LAB 613-08",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "AGR222-B2",
+              "aula": "LAB 613-08",
+              "inicio": "16:45",
+              "fin": "18:15"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA215",
+              "aula": "616-17",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "AGR223-B1",
+              "aula": "LAB 612-10",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "AGR223",
+              "aula": "AULA 616-17",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "AGR223-B2",
+              "aula": "LAB 612-11",
+              "inicio": "16:00",
+              "fin": "17:30"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "INA216",
+              "aula": "AULA 610-02",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "PRA242",
+              "aula": "AULA 616-13",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "INA214",
+              "aula": "AULA 610-07",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA214",
+              "aula": "TALLER",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "PRA242",
+              "aula": "AULA 616-17",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "SABADO",
+              "materia_sigla": "AGR224",
+              "aula": "AULA 616-17",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "SABADO",
+              "materia_sigla": "AGR224",
+              "aula": "AULA 616-17",
+              "inicio": "11:30",
+              "fin": "13:00"
+            }
+          ]
+        },
+        {
+          "grupo": "C",
+          "materias": {
+            "AGR224": {
+              "materia": "MANEJO DE MALEZAS",
+              "docente": "GONZALES VASQUEZ GREGORIO"
+            },
+            "INA214": {
+              "materia": "MAQUINARIA AGRICOLA",
+              "docente": "POR DESIGNAR"
+            },
+            "INA216": {
+              "materia": "DISENOS EXPERIMENTALES",
+              "docente": "SANCHEZ RIVERA RAMIRO GONZA"
+            },
+            "PRA242": {
+              "materia": "AGROSTOLOGIA Y CONSERV. FO",
+              "docente": "LIMON MOSCOSO ROGER"
+            }
+          },
+          "clases": [
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA216",
+              "aula": "AULA 610-10",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA214",
+              "aula": "AULA 616-17",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "PRA242",
+              "aula": "AULA 610-03",
+              "inicio": "07:45",
+              "fin": "09:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "AGR224",
+              "aula": "LAB RIEGO",
+              "inicio": "07:45",
+              "fin": "09:15"
+            }
+          ]
+        },
+        {
+          "grupo": "D",
+          "materias": {
+            "INA214": {
+              "materia": "MAQUINARIA AGRICOLA",
+              "docente": "SALGADO ROMERO TEOFILO"
+            },
+            "INA216": {
+              "materia": "DISENOS EXPERIMENTALES",
+              "docente": "MORGAN NAVA GRACE ISABEL"
+            },
+            "PRA242": {
+              "materia": "AGROSTOLOGIA Y CONSERV. FO",
+              "docente": "LIMON MOSCOSO ROGER"
+            }
+          },
+          "clases": [
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA216",
+              "aula": "SALA DE COMP",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "PRA242",
+              "aula": "AULA 610-03",
+              "inicio": "17:30",
+              "fin": null
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "INA214",
+              "aula": "AULA 610-10",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "INA214",
+              "aula": "TALLER",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "PRA242",
+              "aula": "AULA 610-03",
+              "inicio": "14:30",
+              "fin": "16:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semestre": 5,
+      "grupos": [
+        {
+          "grupo": "A",
+          "materias": {
+            "AGR321": {
+              "materia": "OLERICULTURA",
+              "docente": "SALGADO ROMERO TEOFILO"
+            },
+            "AGR322": {
+              "materia": "MANEJO INTEGRADO DE ENF",
+              "docente": "LANGUIDEY JUSTINIANO DE AN"
+            },
+            "AGR323": {
+              "materia": "MANEJO INTEGRADO DE PLA",
+              "docente": "VARGAS ROJAS MATEO"
+            },
+            "DRS331": {
+              "materia": "ADMINISTRACION AGROPEC",
+              "docente": "MERCADO LEYGUE ELIAS"
+            },
+            "INA311": {
+              "materia": "SISTEMAS DE INFORMACION",
+              "docente": "MAGNE SALAZAR JULIO CESAR"
+            },
+            "PRA341": {
+              "materia": "ZOOTECNIA II",
+              "docente": "POR DESIGNAR"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "AGR321",
+              "aula": "AULA 610-13",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA311-A1",
+              "aula": "LAB 613-05",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR323",
+              "aula": "AULA 616-18",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR322",
+              "aula": "AULA 610-03",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "INA311-A2",
+              "aula": "LAB 613-05",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA311",
+              "aula": "LAB. 613-05",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA311-A3",
+              "aula": "LAB 613-05",
+              "inicio": "12:15",
+              "fin": "13:45"
+            },
+            {
+              "dia": "SABADO",
+              "materia_sigla": "DRS331",
+              "aula": "AULA 610-03",
+              "inicio": "09:15",
+              "fin": "10:45"
+            }
+          ]
+        },
+        {
+          "grupo": "B",
+          "materias": {
+            "AGR321": {
+              "materia": "OLERICULTURA",
+              "docente": "SANCHEZ RIVERA RAMIRO GO"
+            },
+            "AGR322": {
+              "materia": "MANEJO INTEGRADO DE ENF",
+              "docente": "RIVADENEIRA MICHEL CARLOS"
+            },
+            "AGR323": {
+              "materia": "MANEJO INTEGRADO DE PLA",
+              "docente": "VARGAS ROJAS MATEO"
+            },
+            "DRS331": {
+              "materia": "ADMINISTRACION AGROPEC",
+              "docente": "DANIEL ESPINOZA"
+            },
+            "PRA341": {
+              "materia": "ZOOTECNIA II",
+              "docente": "POR DESIGNAR"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "AGR321",
+              "aula": "AULA 610-13",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "AGR321",
+              "aula": "HUERTO",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "DRS331",
+              "aula": "AULA 610-09",
+              "inicio": "16:00",
+              "fin": "17:30"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "AGR322",
+              "aula": "AULA 616-18",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR323",
+              "aula": "AULA 616-15",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "SABADO",
+              "materia_sigla": "PRA341",
+              "aula": "AULA 616-14",
+              "inicio": "09:15",
+              "fin": "10:45"
+            }
+          ]
+        },
+        {
+          "grupo": "C",
+          "materias": {
+            "AGR321": {
+              "materia": "OLERICULTURA",
+              "docente": "SANCHEZ RIVERA RAMIRO GO"
+            },
+            "AGR322": {
+              "materia": "MANEJO INTEGRADO DE ENF",
+              "docente": "LANGUIDEY JUSTINIANO DE AN"
+            },
+            "AGR323": {
+              "materia": "MANEJO INTEGRADO DE PLA",
+              "docente": "ALTAMIRANO CORZO RAUL GO"
+            },
+            "DRS331": {
+              "materia": "ADMINISTRACION AGROPEC",
+              "docente": "RODRIGUEZ MENDEZ NELSON"
+            },
+            "PRA341": {
+              "materia": "ZOOTECNIA II",
+              "docente": "POR DESIGNAR"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "DRS331",
+              "aula": "AULA 610-09",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "AGR322",
+              "aula": "AULA 610-03",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR323",
+              "aula": "AULA 616-13",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "CAMBIAR",
+              "aula": null,
+              "inicio": "14:30",
+              "fin": "15:15"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR323",
+              "aula": "AULA 616-13",
+              "inicio": "16:00",
+              "fin": "17:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR321",
+              "aula": "AULA 610-02",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR321",
+              "aula": "HUERTO",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "PRA341",
+              "aula": "AULA 616-16",
+              "inicio": "09:15",
+              "fin": "10:45"
+            }
+          ]
+        },
+        {
+          "grupo": "D",
+          "materias": {
+            "AGR321": {
+              "materia": "OLERICULTURA",
+              "docente": "SALGADO ROMERO TEOFILO"
+            },
+            "DRS331": {
+              "materia": "ADMINISTRACION AGROPEC",
+              "docente": "AGUAYO PINTO ALFREDO"
+            }
+          },
+          "clases": [
+            {
+              "dia": "MARTES",
+              "materia_sigla": "AGR321",
+              "aula": "AULA 610-13",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "DRS331",
+              "aula": "AULA 610-10",
+              "inicio": "16:45",
+              "fin": "18:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "DRS331",
+              "aula": "AULA 610-10",
+              "inicio": "18:15",
+              "fin": "19:45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semestre": 6,
+      "grupos": [
+        {
+          "grupo": "A",
+          "materias": {
+            "AGR324": {
+              "materia": "CULTIVOS I",
+              "docente": "PRADA MERCADO FRANKLIN MOI"
+            },
+            "AGR325": {
+              "materia": "GENETICA",
+              "docente": "DIAZ QUIROGA JUAN JOSE"
+            },
+            "DRS332": {
+              "materia": "ECONOMIA AGRICOLA",
+              "docente": "SANDOVAL HURTADO EDUARDO A"
+            },
+            "DRS333": {
+              "materia": "EXTENSION AGRICOLA",
+              "docente": "ORTUBE FLORES JUAN BENIGNO"
+            },
+            "INA312": {
+              "materia": "MANEJO Y CONSERVACION",
+              "docente": "POR DESIGNAR"
+            },
+            "INA313": {
+              "materia": "HIDRAULICA AGRICOLA",
+              "docente": "CALVIMONTES PALACIOS FIDEL"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "INA312",
+              "aula": "AULA 616-18",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "DRS332",
+              "aula": "AULA 610-09",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "INA313",
+              "aula": "AULA 610-03",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "DRS333",
+              "aula": "AULA 610-09",
+              "inicio": "11:30",
+              "fin": "13:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "DRS332",
+              "aula": "AULA 610-09",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR324",
+              "aula": "AULA 616-15",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "INA312",
+              "aula": "AULA 616-18",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR325",
+              "aula": "AULA 616-18",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "INA313",
+              "aula": "AULA 616-13",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR325",
+              "aula": "AULA 616-18",
+              "inicio": "16:00",
+              "fin": "17:30"
+            }
+          ]
+        },
+        {
+          "grupo": "B",
+          "materias": {
+            "AGR324": {
+              "materia": "CULTIVOS I",
+              "docente": "POR DESIGNAR"
+            },
+            "AGR325": {
+              "materia": "GENETICA",
+              "docente": "DIAZ QUIROGA JUAN JOSE"
+            },
+            "DRS332": {
+              "materia": "ECONOMIA AGRICOLA",
+              "docente": "RODRIGUEZ MENDEZ NELSON A"
+            },
+            "DRS333": {
+              "materia": "EXTENSION AGRICOLA",
+              "docente": "ORTUBE FLORES JUAN BENIGNO"
+            },
+            "INA312": {
+              "materia": "MANEJO Y CONSERVACION",
+              "docente": "POR DESIGNAR"
+            },
+            "INA313": {
+              "materia": "HIDRAULICA AGRICOLA",
+              "docente": "DURAN ARANCIBIA MIGUEL"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "DRS333",
+              "aula": "AULA 610-10",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "AGR325",
+              "aula": "AULA 610-10",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "DRS333",
+              "aula": "AULA 610-10",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "DRS332",
+              "aula": "AULA 610-08",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "DRS332",
+              "aula": "AULA 610-08",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR325",
+              "aula": "AULA 610-10",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR324",
+              "aula": "610-07",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "AGR324",
+              "aula": "AULA 610-07",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "SABADO",
+              "materia_sigla": "INA313",
+              "aula": "AULA 616-16",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "SABADO",
+              "materia_sigla": "INA312",
+              "aula": "AULA 616-17",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "SABADO",
+              "materia_sigla": "INA312",
+              "aula": "AULA 616-17",
+              "inicio": "16:00",
+              "fin": "17:30"
+            }
+          ]
+        },
+        {
+          "grupo": "C",
+          "materias": {
+            "AGR324": {
+              "materia": "CULTIVOS I",
+              "docente": "POR DESIGNAR"
+            },
+            "DRS332": {
+              "materia": "ECONOMIA AGRICOLA",
+              "docente": "IBAÑEZ ZABALA ERNESTO ERWIN"
+            },
+            "DRS333": {
+              "materia": "EXTENSION AGRICOLA",
+              "docente": "ORTUBE FLORES JUAN BENIGNO"
+            },
+            "INA312": {
+              "materia": "MANEJO Y CONSERVACION",
+              "docente": "SALAS VELASCO MARIA TERESA"
+            }
+          },
+          "clases": [
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "DRS333",
+              "aula": "AULA 610-11",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "AGR324",
+              "aula": "AULA 610-09",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA312",
+              "aula": "AULA 616-12",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "SABADO",
+              "materia_sigla": "DRS332",
+              "aula": "AULA 616-13",
+              "inicio": "09:15",
+              "fin": "10:45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semestre": 7,
+      "grupos": [
+        {
+          "grupo": "A",
+          "materias": {
+            "AGR421": {
+              "materia": "FRUTICULTURA",
+              "docente": "PRADA CESPEDES GUALBERTO"
+            },
+            "AGR422": {
+              "materia": "CULTIVOS II",
+              "docente": "PRADA MERCADO FRANKLIN M"
+            },
+            "AGR423": {
+              "materia": "FITOMEJORAMIENTO",
+              "docente": "PEREZ ANGULO ALFREDO VICTO"
+            },
+            "DRS431": {
+              "materia": "ELABORACION DE PROYECTOS AG",
+              "docente": "RODRIGUEZ MENDEZ NELSON A"
+            },
+            "INA411": {
+              "materia": "RIEGOS Y DRENAJES",
+              "docente": "GONZALES VASQUEZ GREGORIO"
+            }
+          },
+          "clases": [
+            {
+              "dia": "MARTES",
+              "materia_sigla": "DRS431",
+              "aula": "AULA 616-12",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR421",
+              "aula": "AULA 610-13",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR423",
+              "aula": "AULA 610-09",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "INA411",
+              "aula": "LAB RIEG",
+              "inicio": "13:45",
+              "fin": "16:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR421",
+              "aula": "AULA 610-13",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR423",
+              "aula": "AULA 610-09",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "AGR422",
+              "aula": "AULA 616-12",
+              "inicio": "10:00",
+              "fin": "11:30"
+            }
+          ]
+        },
+        {
+          "grupo": "B",
+          "materias": {
+            "AGR421": {
+              "materia": "FRUTICULTURA",
+              "docente": "PRADA CESPEDES GUALBERTO"
+            },
+            "AGR422": {
+              "materia": "CULTIVOS II",
+              "docente": "POR DESIGNAR"
+            },
+            "AGR423": {
+              "materia": "FITOMEJORAMIENTO",
+              "docente": "PEREZ ANGULO ALFREDO VICTO"
+            },
+            "DRS431": {
+              "materia": "ELABORACION DE PROYECTOS",
+              "docente": "GARCIA GUTIERREZ FREDDY"
+            },
+            "INA411": {
+              "materia": "RIEGOS Y DRENAJES",
+              "docente": "GONZALES VASQUEZ GREGORIO"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "DRS431",
+              "aula": "AULA 616-12",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "AGR422",
+              "aula": "AULA 616-15",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR423",
+              "aula": "AULA 610-09",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR421",
+              "aula": "AULA 610-13",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR421",
+              "aula": "AULA 610-13",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA411",
+              "aula": "LAB RIEG",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "AGR423",
+              "aula": "AULA 610-09",
+              "inicio": "13:45",
+              "fin": "15:15"
+            }
+          ]
+        },
+        {
+          "grupo": "C",
+          "materias": {
+            "AGR421": {
+              "materia": "FRUTICULTURA",
+              "docente": "PRADA CESPEDES GUALBERTO"
+            },
+            "AGR422": {
+              "materia": "CULTIVOS II",
+              "docente": "POR DESIGNAR"
+            },
+            "DRS431": {
+              "materia": "ELABORACION DE PROYECTOS AG",
+              "docente": "LLANOS ROCHA JOSE LUIS"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "AGR421",
+              "aula": "AULA 610-08",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "DRS431",
+              "aula": "AULA 610-11",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "AGR421",
+              "aula": "AULA 610-08",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR422",
+              "aula": "AULA 616-12",
+              "inicio": "10:00",
+              "fin": "11:30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semestre": 8,
+      "grupos": [
+        {
+          "grupo": "A",
+          "materias": {
+            "AGR424": {
+              "materia": "TECNOLOGIA DE SEMILLAS",
+              "docente": "OTERO OUTUMURO TRIGO MARI"
+            },
+            "DRS432": {
+              "materia": "SEMINARIO AGROPRODUCTIVO",
+              "docente": "LLANOS ROCHA JOSE LUIS"
+            },
+            "DRS433": {
+              "materia": "AGROECOLOGIA",
+              "docente": "AGUILERA SANDOVAL GLADYS"
+            },
+            "INA412": {
+              "materia": "DISENO DE METODOS DE RIEGO",
+              "docente": "GONZALES VASQUEZ GREGORIO"
+            },
+            "TGL451": {
+              "materia": "PROYECTO DE GRADO",
+              "docente": "LANGUIDEY JUSTINIANO DE A"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "DRS433",
+              "aula": "AULA 616-13",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "AGR424",
+              "aula": "AULA 610-02",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "INA412",
+              "aula": "LAB DIS. RIE",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "DRS433",
+              "aula": "AULA 616-14",
+              "inicio": "11:30",
+              "fin": "13:00"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "TGL451",
+              "aula": "LAB-ADMINIST",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "DRS432",
+              "aula": "AULA 616-15",
+              "inicio": "09:15",
+              "fin": "10:45"
+            }
+          ]
+        },
+        {
+          "grupo": "B",
+          "materias": {
+            "AGR424": {
+              "materia": "TECNOLOGIA DE SEMILLAS",
+              "docente": "MOLINA GOMEZ MAARCELO"
+            },
+            "DRS432": {
+              "materia": "SEMINARIO AGROPRODUCTIVO",
+              "docente": "LANGUIDEY JUSTINIANO DE ANTE"
+            },
+            "DRS433": {
+              "materia": "AGROECOLOGIA",
+              "docente": "AGUILERA SANDOVAL GLADYS"
+            },
+            "INA412": {
+              "materia": "DISENO DE METODOS DE RIEGO",
+              "docente": "GONZALES VASQUEZ GREGORIO"
+            },
+            "TGL451": {
+              "materia": "PROYECTO DE GRADO",
+              "docente": "LANGUIDEY JUSTINIANO DE A"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "AGR424",
+              "aula": "AULA 610-11",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "LUNES",
+              "materia_sigla": "DRS433",
+              "aula": "AULA 616-15",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "DRS433",
+              "aula": "AULA 616-16",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "DRS432",
+              "aula": "AULA 610-03",
+              "inicio": "16:00",
+              "fin": "18:15"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "TGL451-D",
+              "aula": "LAB-ADMINIST",
+              "inicio": "15:15",
+              "fin": "16:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "TGL451-B",
+              "aula": "AULA 610-11",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA412",
+              "aula": "LAB DIS. RIE",
+              "inicio": "15:15",
+              "fin": "16:45"
+            }
+          ]
+        },
+        {
+          "grupo": "C",
+          "materias": {
+            "DRS432": {
+              "materia": "SEMINARIO AGROPRODUCTIVO",
+              "docente": "MARIN CONDORI MAMANI"
+            },
+            "TGL451": {
+              "materia": "PROYECTO DE GRADO",
+              "docente": "ORTUBE FLORES JUAN BENIG"
+            },
+            "DRS433": {
+              "materia": "AGROECOLOGIA",
+              "docente": "PATRICIA HERRERA DE PINTO"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "DRS433",
+              "aula": "AULA 610-10",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "DRS433",
+              "aula": "AULA 610-10",
+              "inicio": "08:30",
+              "fin": "10:00"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "TGL451-C",
+              "aula": "AULA 610-11",
+              "inicio": "13:45",
+              "fin": "15:15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semestre": 9,
+      "grupos": [
+        {
+          "grupo": "A",
+          "materias": {
+            "TGL551": {
+              "materia": "PRACTICAS PRE PROFESIO",
+              "docente": "PRADA MERCADO FRANKLIN M"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "TGL551-A8",
+              "aula": null,
+              "inicio": "15:15",
+              "fin": "16:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "TGL551-9A",
+              "aula": null,
+              "inicio": "14:30",
+              "fin": "15:15"
+            },
+            {
+              "dia": "MIERCOLES",
+              "materia_sigla": "TGL551-A5",
+              "aula": null,
+              "inicio": "10:45",
+              "fin": "11:30"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "TGL551-A7",
+              "aula": null,
+              "inicio": "10:00",
+              "fin": "10:45"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "TGL551-6A",
+              "aula": null,
+              "inicio": "14:30",
+              "fin": "15:15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semestre": 10,
+      "grupos": [
+        {
+          "grupo": "A",
+          "materias": {
+            "AGR521": {
+              "materia": "BIOTECNOLOGIA",
+              "docente": "MORALES BENAVENT INGRID"
+            },
+            "DRS531": {
+              "materia": "DERECHO AGRARIO",
+              "docente": "RODRIGUEZ MENDEZ NELSON AN"
+            },
+            "DRS532": {
+              "materia": "PLANIFICACION Y GESTION A",
+              "docente": "LLANOS ROCHA JOSE LUIS"
+            },
+            "PRA541": {
+              "materia": "CONSERVACION DE ALIMENTO",
+              "docente": "MORENO JARAMILLO ROBERT AN"
+            },
+            "PRA542": {
+              "materia": "SANIDAD Y REPROD. ANIMAL",
+              "docente": "POR DESIGNAR"
+            }
+          },
+          "clases": [
+            {
+              "dia": "MARTES",
+              "materia_sigla": "PRA542",
+              "aula": "AULA 610-13",
+              "inicio": "14:30",
+              "fin": "16:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "PRA541",
+              "aula": "AULA 616-13",
+              "inicio": "19:00",
+              "fin": "21:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR521",
+              "aula": "AULA 616 -15",
+              "inicio": "09:15",
+              "fin": "10:45"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR521-A1",
+              "aula": "MOD ADM 609",
+              "inicio": "10:45",
+              "fin": "12:15"
+            },
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "AGR521-A2",
+              "aula": "MOD ADM 609",
+              "inicio": "13:00",
+              "fin": "14:30"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "DRS532",
+              "aula": "AULA 616-15",
+              "inicio": "14:30",
+              "fin": "16:00"
+            }
+          ]
+        },
+        {
+          "grupo": "B",
+          "materias": {
+            "INA511": {
+              "materia": "GESTION AMBIENTAL Y TER",
+              "docente": "MAGNE SALAZAR JULIO CESAR"
+            }
+          },
+          "clases": [
+            {
+              "dia": "LUNES",
+              "materia_sigla": "INA511-B",
+              "aula": "LAB. SIG",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "INA511-B",
+              "aula": null,
+              "inicio": "08:30",
+              "fin": "09:15"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

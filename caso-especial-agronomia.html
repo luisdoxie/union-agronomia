@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caso Especial · Ingeniería Agronómica · FCA-UAGRM</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+  :root{
+    --rojo: #C81E1E;
+    --rojo-oscuro: #8B1414;
+    --rojo-tinta: #7A1010;
+    --crema: #FAF6EE;
+    --tierra: #6B5843;
+    --verde-inst: #B7E1A4;
+    --amarillo-esp: #FCE5A0;
+    --rosa-apl: #F6C9DD;
+    --azul-comp: #C6CFE6;
+    --amarillo-concl: #F7F27A;
+    --tinta: #2A2420;
+    --linea: #E4DACB;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--crema);
+    color: var(--tinta);
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    background: linear-gradient(135deg, var(--rojo-oscuro), var(--rojo));
+    color:white;
+    padding: 22px 32px;
+    display:flex;
+    align-items:center;
+    gap:16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.15);
+  }
+  header .tractor-mark{
+    width:46px;height:46px;border-radius:50%;
+    background:white;
+    display:flex;align-items:center;justify-content:center;
+    font-size:22px;
+    flex-shrink:0;
+  }
+  header h1{ font-size: 1.15rem; margin:0; font-weight:700; letter-spacing:.3px;}
+  header p{ margin:2px 0 0; font-size:.8rem; opacity:.9; }
+
+  /* ---------- Layout ---------- */
+  .wrap{
+    max-width:1180px;
+    margin: 28px auto;
+    padding: 0 20px 60px;
+    display:grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 26px;
+  }
+  @media (max-width: 980px){
+    .wrap{ grid-template-columns: 1fr; }
+  }
+
+  .panel{
+    background:white;
+    border:1px solid var(--linea);
+    border-radius:12px;
+    padding: 22px 24px;
+    margin-bottom: 22px;
+  }
+  .panel h2{
+    font-size:1rem;
+    text-transform:uppercase;
+    letter-spacing:.6px;
+    color:var(--rojo-oscuro);
+    margin: 0 0 4px;
+    display:flex; align-items:center; gap:8px;
+  }
+  .panel .sub{ font-size:.82rem; color:#7a7266; margin:0 0 18px; }
+
+  label{
+    display:block;
+    font-size:.78rem;
+    font-weight:600;
+    color:var(--tierra);
+    margin-bottom:5px;
+    margin-top:14px;
+  }
+  label:first-child{ margin-top:0; }
+  input[type=text], input[type=tel], select{
+    width:100%;
+    padding:10px 12px;
+    border:1.5px solid var(--linea);
+    border-radius:8px;
+    font-size:.92rem;
+    font-family:inherit;
+    background:#fffdfa;
+    color:var(--tinta);
+  }
+  input:focus, select:focus{
+    outline:none;
+    border-color: var(--rojo);
+    box-shadow: 0 0 0 3px rgba(200,30,30,.12);
+  }
+  .row2{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+
+  /* ---------- Materia block ---------- */
+  .materia-block{
+    border:1.5px dashed var(--linea);
+    border-radius:10px;
+    padding:14px 16px 16px;
+    margin-top:16px;
+    position:relative;
+  }
+  .materia-block .num{
+    position:absolute; top:-11px; left:12px;
+    background: var(--rojo);
+    color:white;
+    font-size:.72rem; font-weight:700;
+    padding:2px 9px;
+    border-radius:20px;
+  }
+  .prereq-display{
+    margin-top:14px;
+    background: var(--crema);
+    border-radius:8px;
+    padding:10px 12px;
+    font-size:.82rem;
+    min-height:20px;
+  }
+  .prereq-display .tag{
+    display:inline-block;
+    background: var(--verde-inst);
+    color:#2f4a24;
+    font-weight:700;
+    font-size:.72rem;
+    padding:2px 8px;
+    border-radius:5px;
+    margin-right:6px;
+  }
+  .prereq-display .muted{ color:#a39a8c; font-style:italic; }
+
+  /* ---------- Malla ---------- */
+  .malla-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    gap:8px;
+  }
+  .sem-col{ display:flex; flex-direction:column; gap:6px; }
+  .sem-label{
+    font-size:.68rem; font-weight:700; text-align:center;
+    background: var(--rojo-oscuro); color:white;
+    padding:5px 2px; border-radius:6px;
+    margin-bottom:2px;
+  }
+  .materia-chip{
+    font-size:.66rem;
+    line-height:1.25;
+    padding:6px 7px;
+    border-radius:6px;
+    border:1.5px solid transparent;
+    cursor:pointer;
+    user-select:none;
+    transition: transform .1s ease;
+    text-align:left;
+  }
+  .materia-chip:hover{ transform: translateY(-1px); }
+  .materia-chip.aprobada{
+    border-color: var(--rojo);
+    box-shadow: inset 0 0 0 2px white, 0 0 0 1.5px var(--rojo);
+  }
+  .materia-chip.aprobada::after{
+    content: "✓ ";
+    font-weight:800;
+    color: var(--rojo-oscuro);
+  }
+  .materia-chip .sigla{ display:block; font-weight:800; opacity:.75; font-size:.62rem; }
+
+  .area-instrumental{ background: var(--verde-inst); }
+  .area-especifica{ background: var(--amarillo-esp); }
+  .area-aplicada{ background: var(--rosa-apl); }
+  .area-complementaria{ background: var(--azul-comp); }
+  .area-conclusion{ background: var(--amarillo-concl); }
+
+  .leyenda{
+    display:flex; flex-wrap:wrap; gap:10px 16px;
+    font-size:.7rem; color:#7a7266;
+    margin-top:14px; padding-top:12px; border-top:1px solid var(--linea);
+  }
+  .leyenda span{ display:flex; align-items:center; gap:5px; }
+  .swatch{ width:11px;height:11px;border-radius:3px; display:inline-block; }
+
+  .avance-count{
+    font-size:.78rem; color: var(--rojo-oscuro); font-weight:700;
+    margin-bottom:10px;
+  }
+
+  /* ---------- Preview ---------- */
+  .preview-sticky{ position: sticky; top: 20px; }
+  .doc-preview{
+    background:white;
+    border:1px solid var(--linea);
+    border-radius:10px;
+    padding: 34px 38px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size:.82rem;
+    line-height:1.55;
+    color:#1a1a1a;
+    box-shadow: 0 4px 20px rgba(0,0,0,.06);
+  }
+  .doc-preview .doc-fecha{ text-align:left; margin-bottom:18px; }
+  .doc-preview .doc-dest{ margin-bottom:4px; }
+  .doc-preview .doc-dest b{ display:block; }
+  .doc-preview .doc-ref{
+    margin: 16px 0; font-weight:700; font-size:.82rem;
+  }
+  .doc-preview table{
+    width:100%; border-collapse:collapse; margin:14px 0 18px;
+    font-size:.74rem;
+  }
+  .doc-preview th, .doc-preview td{
+    border:1px solid #999; padding:6px 7px; text-align:center;
+  }
+  .doc-preview th{ background:#eee; font-weight:700; }
+  .doc-preview .placeholder{ color:#bbb; font-style:italic; }
+  .doc-preview .firma{ margin-top:34px; }
+  .doc-preview .firma b{ display:block; margin-top:2px;}
+
+  .btn-generar{
+    width:100%;
+    margin-top:18px;
+    background: linear-gradient(135deg, var(--rojo), var(--rojo-oscuro));
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:9px;
+    font-size:.92rem;
+    font-weight:700;
+    letter-spacing:.3px;
+    cursor:pointer;
+    box-shadow: 0 4px 14px rgba(200,30,30,.3);
+  }
+  .btn-generar:hover{ filter:brightness(1.06); }
+  .btn-generar:disabled{ opacity:.5; cursor:not-allowed; }
+
+  .hint{
+    font-size:.72rem; color:#a39a8c; margin-top:6px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="tractor-mark">🚜</div>
+  <div>
+    <h1>Generador de Caso Especial — Ingeniería Agronómica</h1>
+    <p>Facultad de Ciencias Agrícolas · UAGRM</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- LEFT: form + malla -->
+  <div>
+    <div class="panel">
+      <h2>1 · Tus datos</h2>
+      <p class="sub">Se completan directo en la carta, a la derecha.</p>
+      <label for="f-nombre">Nombre completo</label>
+      <input type="text" id="f-nombre" placeholder="Ej. Luis Miguel Pérez Rojas">
+      <div class="row2">
+        <div>
+          <label for="f-registro">Registro</label>
+          <input type="text" id="f-registro" placeholder="Ej. 220012345">
+        </div>
+        <div>
+          <label for="f-celular">Celular</label>
+          <input type="tel" id="f-celular" placeholder="Ej. 70012345">
+        </div>
+      </div>
+      <div class="row2">
+        <div>
+          <label for="f-director">Director de Carrera</label>
+          <input type="text" id="f-director" value="Ing. Marín Condori">
+        </div>
+        <div>
+          <label for="f-semestre">Semestre del trámite</label>
+          <select id="f-semestre">
+            <option value="I">I/2026</option>
+            <option value="II" selected>II/2026</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>2 · Marca tus materias aprobadas</h2>
+      <p class="sub">Tocá cada materia que ya venciste. Así el sistema sabe qué prerrequisitos tenés listos.</p>
+      <div class="avance-count" id="avance-count">0 materias marcadas</div>
+      <div class="malla-grid" id="malla-grid"></div>
+      <div class="leyenda">
+        <span><i class="swatch area-instrumental"></i>Instrumental</span>
+        <span><i class="swatch area-especifica"></i>Específica</span>
+        <span><i class="swatch area-aplicada"></i>Aplicada</span>
+        <span><i class="swatch area-complementaria"></i>Complementaria</span>
+        <span><i class="swatch area-conclusion"></i>Conclusión</span>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>3 · Materias a inscribir como caso especial</h2>
+      <p class="sub">Máximo 2. El prerrequisito se completa solo, según lo que marcaste arriba.</p>
+
+      <div class="materia-block">
+        <span class="num">1</span>
+        <label for="m1-materia">Materia a inscribir</label>
+        <select id="m1-materia"></select>
+        <div class="prereq-display" id="m1-prereq"><span class="muted">Elegí una materia para ver su prerrequisito</span></div>
+        <label for="m1-grupo">Grupo a inscribir</label>
+        <input type="text" id="m1-grupo" placeholder="Ej. A">
+      </div>
+
+      <div class="materia-block">
+        <span class="num">2</span>
+        <label for="m2-materia">Materia a inscribir (opcional)</label>
+        <select id="m2-materia"><option value="">— Ninguna —</option></select>
+        <div class="prereq-display" id="m2-prereq"><span class="muted">Elegí una materia para ver su prerrequisito</span></div>
+        <label for="m2-grupo">Grupo a inscribir</label>
+        <input type="text" id="m2-grupo" placeholder="Ej. B">
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: preview -->
+  <div class="preview-sticky">
+    <div class="panel" style="padding:16px 18px;">
+      <h2 style="margin-bottom:0;">Vista previa de tu carta</h2>
+    </div>
+    <div class="doc-preview" id="doc-preview"></div>
+    <button class="btn-generar" id="btn-pdf">Descargar carta en PDF</button>
+    <p class="hint">Se descarga lista para imprimir, firmar y adjuntar tu fotocopia de C.I.</p>
+  </div>
+
+</div>
+
+<script>
+const MALLA = {
+  "carrera": "Ingeniería Agronómica",
+  "plan": "153-3",
+  "resolucion": "Nº 14/2015",
+  "facultad": "FCA-UAGRM",
+  "areas": [
+    { "id": "instrumental", "nombre": "Área Básica Instrumental", "color": "#B7E1A4", "totalDeclarado": 18 },
+    { "id": "especifica", "nombre": "Área Básica Específica", "color": "#FCE5A0", "totalDeclarado": 15 },
+    { "id": "aplicada", "nombre": "Área Específica Aplicada", "color": "#F6C9DD", "totalDeclarado": 13 },
+    { "id": "complementaria", "nombre": "Área Complementaria", "color": "#C6CFE6", "totalDeclarado": 4 },
+    { "id": "conclusion", "nombre": "Conclusión del Plan de Estudios", "color": "#F7F27A", "totalDeclarado": 1 }
+  ],
+  "materias": [
+    { "sigla": "BOT101", "nombre": "Botánica General", "semestre": 1, "area": "instrumental", "prerrequisitos": [] },
+    { "sigla": "AGR121", "nombre": "Agricultura General", "semestre": 1, "area": "instrumental", "prerrequisitos": [] },
+    { "sigla": "QMC101", "nombre": "Química General", "semestre": 1, "area": "instrumental", "prerrequisitos": [] },
+    { "sigla": "FIS101", "nombre": "Física General", "semestre": 1, "area": "instrumental", "prerrequisitos": [] },
+    { "sigla": "MAT101", "nombre": "Cálculo I", "semestre": 1, "area": "instrumental", "prerrequisitos": [] },
+    { "sigla": "DRS131", "nombre": "Sociología Rural", "semestre": 1, "area": "complementaria", "prerrequisitos": [] },
+
+    { "sigla": "BOT102", "nombre": "Botánica Sistemática", "semestre": 2, "area": "instrumental", "prerrequisitos": ["BOT101"] },
+    { "sigla": "INA111", "nombre": "Química Agrícola", "semestre": 2, "area": "especifica", "prerrequisitos": ["QMC101"] },
+    { "sigla": "INA112", "nombre": "Topografía", "semestre": 2, "area": "instrumental", "prerrequisitos": ["FIS101"] },
+    { "sigla": "MAT102", "nombre": "Cálculo Aplicado", "semestre": 2, "area": "instrumental", "prerrequisitos": ["MAT101"] },
+    { "sigla": "MAT103", "nombre": "Informática Aplicada", "semestre": 2, "area": "instrumental", "prerrequisitos": ["MAT101"] },
+    { "sigla": "DRS132", "nombre": "Metodología de la Investigación", "semestre": 2, "area": "instrumental", "prerrequisitos": ["DRS131"] },
+    { "sigla": "PRA241", "nombre": "Zootecnia I", "semestre": 2, "area": "especifica", "prerrequisitos": [] },
+
+    { "sigla": "AGR221", "nombre": "Fisiología Vegetal", "semestre": 3, "area": "instrumental", "prerrequisitos": ["BOT102", "AGR121"] },
+    { "sigla": "INA211", "nombre": "Edafología", "semestre": 3, "area": "instrumental", "prerrequisitos": ["INA111"] },
+    { "sigla": "INA212", "nombre": "Agroclimatología", "semestre": 3, "area": "instrumental", "prerrequisitos": ["INA111"] },
+    { "sigla": "INA213", "nombre": "Construcciones Agropecuarias", "semestre": 3, "area": "especifica", "prerrequisitos": ["INA112"] },
+    { "sigla": "MAT201", "nombre": "Estadística", "semestre": 3, "area": "instrumental", "prerrequisitos": ["MAT102", "MAT103"] },
+    { "sigla": "PRA242", "nombre": "Agrostología y Conservación de Forrajes", "semestre": 3, "area": "especifica", "prerrequisitos": ["PRA241"] },
+
+    { "sigla": "AGR222", "nombre": "Entomología General", "semestre": 4, "area": "instrumental", "prerrequisitos": ["AGR221"] },
+    { "sigla": "AGR223", "nombre": "Microbiología y Fitopatología", "semestre": 4, "area": "instrumental", "prerrequisitos": ["AGR221"] },
+    { "sigla": "AGR224", "nombre": "Manejo de Malezas", "semestre": 4, "area": "instrumental", "prerrequisitos": ["AGR221"] },
+    { "sigla": "INA214", "nombre": "Maquinaria Agrícola", "semestre": 4, "area": "especifica", "prerrequisitos": ["INA212"] },
+    { "sigla": "INA215", "nombre": "Fertilidad de Suelos", "semestre": 4, "area": "especifica", "prerrequisitos": ["INA211"] },
+    { "sigla": "INA216", "nombre": "Diseños Experimentales", "semestre": 4, "area": "especifica", "prerrequisitos": ["MAT201"] },
+    { "sigla": "INA311", "nombre": "Sistema de Información Geográfica", "semestre": 4, "area": "especifica", "prerrequisitos": ["INA213"] },
+    { "sigla": "DRS331", "nombre": "Administración Agropecuaria", "semestre": 4, "area": "complementaria", "prerrequisitos": ["DRS132"] },
+    { "sigla": "PRA341", "nombre": "Zootecnia II", "semestre": 4, "area": "aplicada", "prerrequisitos": ["PRA242"] },
+
+    { "sigla": "AGR321", "nombre": "Olericultura", "semestre": 5, "area": "especifica", "prerrequisitos": ["AGR222"] },
+    { "sigla": "AGR322", "nombre": "Manejo Integrado de Enfermedades", "semestre": 5, "area": "especifica", "prerrequisitos": ["AGR223"] },
+    { "sigla": "AGR323", "nombre": "Manejo Integrado de Plagas", "semestre": 5, "area": "especifica", "prerrequisitos": ["AGR222", "AGR224"] },
+    { "sigla": "AGR325", "nombre": "Genética", "semestre": 5, "area": "instrumental", "prerrequisitos": ["AGR321"] },
+    { "sigla": "INA312", "nombre": "Manejo y Conservación de Suelos", "semestre": 5, "area": "aplicada", "prerrequisitos": ["INA215", "INA216"] },
+    { "sigla": "INA313", "nombre": "Hidráulica Agrícola", "semestre": 5, "area": "instrumental", "prerrequisitos": ["INA216", "INA311"] },
+    { "sigla": "DRS332", "nombre": "Economía Agrícola", "semestre": 5, "area": "complementaria", "prerrequisitos": ["DRS331"] },
+    { "sigla": "DRS333", "nombre": "Extensión Agrícola", "semestre": 5, "area": "complementaria", "prerrequisitos": ["DRS331"] },
+
+    { "sigla": "AGR324", "nombre": "Cultivos I", "semestre": 6, "area": "aplicada", "prerrequisitos": ["AGR322", "AGR323"] },
+    { "sigla": "INA411", "nombre": "Riegos y Drenajes", "semestre": 6, "area": "especifica", "prerrequisitos": ["INA312", "INA313"] },
+    { "sigla": "INA511", "nombre": "Gestión Ambiental y Territorial", "semestre": 6, "area": "aplicada", "prerrequisitos": ["INA313"], "electiva": "Electiva 1" },
+    { "sigla": "DRS431", "nombre": "Elaboración de Proyectos Agropecuarios", "semestre": 6, "area": "aplicada", "prerrequisitos": ["DRS332", "DRS333"] },
+    { "sigla": "DRS531", "nombre": "Derecho Agrario", "semestre": 6, "area": "aplicada", "prerrequisitos": ["DRS333"], "electiva": "Electiva 4" },
+
+    { "sigla": "AGR421", "nombre": "Fruticultura", "semestre": 7, "area": "aplicada", "prerrequisitos": ["AGR324"] },
+    { "sigla": "AGR422", "nombre": "Cultivos II", "semestre": 7, "area": "aplicada", "prerrequisitos": ["AGR324"] },
+    { "sigla": "AGR423", "nombre": "Fitomejoramiento", "semestre": 7, "area": "especifica", "prerrequisitos": ["AGR325"] },
+    { "sigla": "INA412", "nombre": "Diseño de Métodos de Riego", "semestre": 7, "area": "especifica", "prerrequisitos": ["INA411"] },
+    { "sigla": "DRS432", "nombre": "Seminario Agroproductivo", "semestre": 7, "area": "aplicada", "prerrequisitos": ["DRS431"] },
+    { "sigla": "DRS532", "nombre": "Planificación y Gestión Agropecuaria", "semestre": 7, "area": "aplicada", "prerrequisitos": ["DRS431"], "electiva": "Electiva 3" },
+    { "sigla": "PRA541", "nombre": "Conservación de Alimentos y Alimentación", "semestre": 7, "area": "aplicada", "prerrequisitos": ["PRA341"], "electiva": "Electiva 5" },
+    { "sigla": "PRA542", "nombre": "Sanidad y Reproducción Animal", "semestre": 7, "area": "aplicada", "prerrequisitos": ["PRA341"], "electiva": "Electiva 6" },
+
+    { "sigla": "AGR424", "nombre": "Tecnología de Semillas", "semestre": 8, "area": "especifica", "prerrequisitos": ["AGR421", "AGR422", "AGR423"] },
+    { "sigla": "AGR521", "nombre": "Biotecnología", "semestre": 8, "area": "especifica", "prerrequisitos": ["AGR423"], "electiva": "Electiva 2" },
+    { "sigla": "DRS433", "nombre": "Agroecología", "semestre": 8, "area": "aplicada", "prerrequisitos": ["INA312"] },
+    { "sigla": "TGL451", "nombre": "Proyecto de Grado", "semestre": 8, "area": "aplicada", "prerrequisitos": ["DRS431"] },
+
+    { "sigla": "GDI001", "nombre": "Graduación Directa", "semestre": 9, "area": "conclusion", "prerrequisitos": ["AGR424"] },
+    { "sigla": "GRL001", "nombre": "Trabajo de Grado", "semestre": 9, "area": "conclusion", "prerrequisitos": ["TGL451"] },
+    { "sigla": "TGL551", "nombre": "Prácticas Pre profesionales Supervisadas", "semestre": 9, "area": "conclusion", "prerrequisitos": ["TGL451"] }
+  ]
+}
+;
+
+const materiasPorSigla = Object.fromEntries(MALLA.materias.map(m => [m.sigla, m]));
+const aprobadas = new Set();
+
+/* ---------- Render malla ---------- */
+const mallaGrid = document.getElementById('malla-grid');
+const semestres = [...new Set(MALLA.materias.map(m => m.semestre))].sort((a,b)=>a-b);
+
+semestres.forEach(sem => {
+  const col = document.createElement('div');
+  col.className = 'sem-col';
+  const label = document.createElement('div');
+  label.className = 'sem-label';
+  label.textContent = sem + '° SEM';
+  col.appendChild(label);
+
+  MALLA.materias.filter(m => m.semestre === sem).forEach(m => {
+    const chip = document.createElement('div');
+    chip.className = `materia-chip area-${m.area}`;
+    chip.dataset.sigla = m.sigla;
+    chip.innerHTML = `<span class="sigla">${m.sigla}</span>${m.nombre}`;
+    chip.addEventListener('click', () => toggleAprobada(m.sigla, chip));
+    col.appendChild(chip);
+  });
+  mallaGrid.appendChild(col);
+});
+
+function toggleAprobada(sigla, chipEl){
+  if (aprobadas.has(sigla)) { aprobadas.delete(sigla); chipEl.classList.remove('aprobada'); }
+  else { aprobadas.add(sigla); chipEl.classList.add('aprobada'); }
+  document.getElementById('avance-count').textContent = `${aprobadas.size} materia${aprobadas.size===1?'':'s'} marcada${aprobadas.size===1?'':'s'}`;
+  refreshMateriaSelects();
+  updatePreview();
+}
+
+/* ---------- Selects de materia a inscribir ---------- */
+// Regla: se puede pedir como caso especial cualquier materia cuyo(s)
+// prerrequisito(s) estén TODOS aprobados. Mostramos todas, pero destacamos habilitadas.
+function buildOptions(select, placeholder){
+  select.innerHTML = '';
+  if (placeholder){
+    const opt = document.createElement('option');
+    opt.value=''; opt.textContent = placeholder;
+    select.appendChild(opt);
+  }
+  MALLA.materias.forEach(m => {
+    if (m.prerrequisitos.length === 0) return; // sin prerrequisito no aplica a "caso especial por prerrequisito"
+    const habilitada = m.prerrequisitos.every(p => aprobadas.has(p));
+    const opt = document.createElement('option');
+    opt.value = m.sigla;
+    opt.textContent = `${m.nombre} (${m.sigla})${habilitada ? '' : '  — prerrequisito pendiente'}`;
+    if (!habilitada) opt.style.color = '#b8ac9a';
+    select.appendChild(opt);
+  });
+}
+
+function refreshMateriaSelects(){
+  const sel1 = document.getElementById('m1-materia');
+  const sel2 = document.getElementById('m2-materia');
+  const v1 = sel1.value, v2 = sel2.value;
+  buildOptions(sel1, null);
+  buildOptions(sel2, '— Ninguna —');
+  sel1.value = [...sel1.options].some(o=>o.value===v1) ? v1 : sel1.value;
+  sel2.value = [...sel2.options].some(o=>o.value===v2) ? v2 : '';
+  renderPrereq(1); renderPrereq(2);
+}
+
+function renderPrereq(n){
+  const sel = document.getElementById(`m${n}-materia`);
+  const box = document.getElementById(`m${n}-prereq`);
+  const m = materiasPorSigla[sel.value];
+  if (!m){ box.innerHTML = '<span class="muted">Elegí una materia para ver su prerrequisito</span>'; return; }
+  if (m.prerrequisitos.length === 0){ box.innerHTML = '<span class="muted">Esta materia no tiene prerrequisito registrado</span>'; return; }
+  box.innerHTML = m.prerrequisitos.map(p => {
+    const pm = materiasPorSigla[p];
+    const aprobadaTag = aprobadas.has(p) ? '' : ' ⚠️ no marcada como aprobada';
+    return `<span class="tag">${pm.sigla}</span>${pm.nombre}${aprobadaTag}`;
+  }).join('<br>');
+}
+
+document.getElementById('m1-materia').addEventListener('change', ()=>{ renderPrereq(1); updatePreview(); });
+document.getElementById('m2-materia').addEventListener('change', ()=>{ renderPrereq(2); updatePreview(); });
+
+refreshMateriaSelects();
+
+/* ---------- Preview del documento ---------- */
+const ids = ['f-nombre','f-registro','f-celular','f-director','f-semestre','m1-grupo','m2-grupo'];
+ids.forEach(id => document.getElementById(id).addEventListener('input', updatePreview));
+document.getElementById('f-semestre').addEventListener('change', updatePreview);
+
+function ph(v, placeholder){
+  return v && v.trim() ? v : `<span class="placeholder">${placeholder}</span>`;
+}
+
+function filaMateria(n){
+  const sel = document.getElementById(`m${n}-materia`);
+  const grupo = document.getElementById(`m${n}-grupo`).value;
+  const m = materiasPorSigla[sel.value];
+  if (!m) return null;
+  const prereqNombres = m.prerrequisitos.map(p => materiasPorSigla[p].nombre).join(' / ');
+  const prereqSiglas = m.prerrequisitos.map(p => p).join(' / ');
+  return { prereqNombres, prereqSiglas, nombre: m.nombre, sigla: m.sigla, grupo };
+}
+
+function updatePreview(){
+  const nombre = document.getElementById('f-nombre').value;
+  const registro = document.getElementById('f-registro').value;
+  const celular = document.getElementById('f-celular').value;
+  const director = document.getElementById('f-director').value || 'Ing. Marín Condori';
+  const semestre = document.getElementById('f-semestre').value;
+
+  const f1 = filaMateria(1);
+  const f2 = filaMateria(2);
+
+  const filas = [f1, f2].filter(Boolean).map((f,i) => `
+    <tr>
+      <td>${i+1}</td>
+      <td>${f.prereqNombres}</td>
+      <td>${f.prereqSiglas}</td>
+      <td>${f.nombre}</td>
+      <td>${f.sigla}${f.grupo ? ' - ' + f.grupo : ''}</td>
+    </tr>`).join('');
+
+  const filasVacias = filas ? '' : `<tr><td>1</td><td colspan="4" class="placeholder">Elegí al menos una materia a inscribir</td></tr>`;
+
+  document.getElementById('doc-preview').innerHTML = `
+    <div class="doc-fecha">Santa Cruz de la Sierra, ___ de ___________ de 2026</div>
+    <div class="doc-dest">
+      Señor:<br>
+      <b>${ph(director,'Ing. Marín Condori')}</b>
+      <b>DIRECTOR DE CARRERA INGENIERÍA AGRONÓMICA</b>
+      <b>-UAGRM</b>
+      Presente.-
+    </div>
+    <div class="doc-ref">Ref.: SOLICITUD INSCRIPCIÓN COMO CASOS ESPECIALES SEMESTRE ${semestre}/2026</div>
+    <p>Distinguido Ing.:</p>
+    <p style="text-indent:24px;">
+      De acuerdo al reglamento general de inscripción de la U.A.G.R.M. aprobado mediante Resolución
+      Vicerrectoral 20/2010, solicito a usted autorizar al CENTRO DE PROCESAMIENTO DE DATOS
+      FACULTATIVO CPD-FAFCP, las inscripciones de las materias como CASOS ESPECIALES
+      semestre ${semestre}/2026, de acuerdo al siguiente detalle adjunto:
+    </p>
+    <table>
+      <thead>
+        <tr><th>N°</th><th>Materia prerrequisito</th><th>Sigla</th><th>Materia a inscribir</th><th>Sigla - Grupo</th></tr>
+      </thead>
+      <tbody>${filas || filasVacias}</tbody>
+    </table>
+    <p>Una vez llenada y firmada la presente solicitud doy conformidad a mi solicitud adjuntando fotocopia de mi cédula de identidad.</p>
+    <p>Atentamente.-</p>
+    <div class="firma">
+      <b>NOMBRE: ${ph(nombre,'________________________')}</b>
+      <b>REGISTRO: ${ph(registro,'________________________')}</b>
+      <b>CELULAR: ${ph(celular,'________________________')}</b>
+    </div>
+    <p style="margin-top:18px;font-size:.72rem;">CC/Arch.</p>
+  `;
+}
+
+updatePreview();
+
+/* ---------- PDF ---------- */
+document.getElementById('btn-pdf').addEventListener('click', () => {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({ unit: 'pt', format: 'letter' });
+  const nombre = document.getElementById('f-nombre').value || '________________________';
+  const registro = document.getElementById('f-registro').value || '________________________';
+  const celular = document.getElementById('f-celular').value || '________________________';
+  const director = document.getElementById('f-director').value || 'Ing. Marín Condori';
+  const semestre = document.getElementById('f-semestre').value;
+  const f1 = filaMateria(1);
+  const f2 = filaMateria(2);
+
+  const marginX = 60;
+  let y = 70;
+  doc.setFont('times','normal'); doc.setFontSize(11);
+
+  doc.text('Santa Cruz de la Sierra, ___ de ___________ de 2026', marginX, y); y += 34;
+  doc.text('Señor:', marginX, y); y += 16;
+  doc.setFont('times','bold');
+  doc.text(director, marginX, y); y += 16;
+  doc.text('DIRECTOR DE CARRERA INGENIERÍA AGRONÓMICA', marginX, y); y += 16;
+  doc.text('-UAGRM', marginX, y); y += 16;
+  doc.setFont('times','normal');
+  doc.text('Presente.-', marginX, y); y += 30;
+
+  doc.setFont('times','bold');
+  doc.text(`Ref.: SOLICITUD INSCRIPCIÓN COMO CASOS ESPECIALES SEMESTRE ${semestre}/2026`, marginX, y, {maxWidth: 480}); y += 34;
+
+  doc.setFont('times','normal');
+  doc.text('Distinguido Ing.:', marginX, y); y += 22;
+
+  const parrafo = `De acuerdo al reglamento general de inscripción de la U.A.G.R.M. aprobado mediante Resolución Vicerrectoral 20/2010, solicito a usted autorizar al CENTRO DE PROCESAMIENTO DE DATOS FACULTATIVO CPD-FAFCP, las inscripciones de las materias como CASOS ESPECIALES semestre ${semestre}/2026, de acuerdo al siguiente detalle adjunto:`;
+  const lineas = doc.splitTextToSize(parrafo, 480);
+  doc.text(lineas, marginX, y); y += lineas.length * 14 + 16;
+
+  // Tabla
+  const filas = [f1, f2].filter(Boolean);
+  const colX = [marginX, marginX+30, marginX+220, marginX+280, marginX+420];
+  const colW = [30, 190, 60, 140, 60];
+  const rowH = 34;
+  const headers = ['N°','Materia prerrequisito','Sigla','Materia a inscribir','Sigla-Grupo'];
+
+  doc.setFont('times','bold'); doc.setFontSize(9);
+  headers.forEach((h,i)=> doc.text(h, colX[i]+4, y+13));
+  doc.rect(marginX, y, 480, rowH);
+  colX.forEach((x,i)=> i>0 && doc.line(x, y, x, y+rowH));
+
+  doc.setFont('times','normal');
+  [0,1].forEach(i => {
+    const ry = y + rowH*(i+1);
+    doc.rect(marginX, ry, 480, rowH);
+    colX.forEach((x,j)=> j>0 && doc.line(x, ry, x, ry+rowH));
+    const f = filas[i];
+    doc.text(String(i+1), colX[0]+4, ry+13);
+    if (f){
+      doc.text(doc.splitTextToSize(f.prereqNombres, colW[1]-8), colX[1]+4, ry+13);
+      doc.text(doc.splitTextToSize(f.prereqSiglas, colW[2]-8), colX[2]+4, ry+13);
+      doc.text(doc.splitTextToSize(f.nombre, colW[3]-8), colX[3]+4, ry+13);
+      doc.text(`${f.sigla}${f.grupo?' - '+f.grupo:''}`, colX[4]+4, ry+13);
+    }
+  });
+  y += rowH*3 + 24;
+
+  doc.setFontSize(11);
+  const parrafo2 = 'Una vez llenada y firmada la presente solicitud doy conformidad a mi solicitud adjuntando fotocopia de mi cédula de identidad.';
+  const lineas2 = doc.splitTextToSize(parrafo2, 480);
+  doc.text(lineas2, marginX, y); y += lineas2.length*14 + 20;
+
+  doc.text('Atentamente.-', marginX, y); y += 44;
+
+  doc.setFont('times','bold');
+  doc.text(`NOMBRE: ${nombre}`, marginX, y); y += 18;
+  doc.text(`REGISTRO: ${registro}`, marginX, y); y += 18;
+  doc.text(`CELULAR: ${celular}`, marginX, y); y += 28;
+
+  doc.setFont('times','normal'); doc.setFontSize(9);
+  doc.text('CC/Arch.', marginX, y);
+
+  const nombreArchivo = (nombre !== '________________________' ? nombre.replace(/\s+/g,'_') : 'caso_especial') + '.pdf';
+  doc.save(nombreArchivo);
+});
+</script>
+
+</body>
+</html>

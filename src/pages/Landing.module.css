@@ -1,0 +1,135 @@
+/* ── Page ── */
+.page { min-height: 100vh; background: #FAF6EE; }
+
+/* ── Hero ── */
+.hero {
+  background: #1A1410;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 70px 24px 80px;
+  position: relative; overflow: hidden;
+  text-align: center;
+}
+
+/* Red halo behind logo */
+.haloRing {
+  position: absolute;
+  width: 320px; height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,30,30,.35) 0%, rgba(200,30,30,.08) 55%, transparent 72%);
+  pointer-events: none;
+  animation: pulse 3.5s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1);   opacity: 1; }
+  50%       { transform: scale(1.06); opacity: .75; }
+}
+
+.logoHero {
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative; z-index: 1;
+  box-shadow: 0 0 0 4px #C81E1E, 0 0 40px rgba(200,30,30,.5);
+  animation: fadeInDown .7s ease both;
+}
+
+.heroText {
+  position: relative; z-index: 1;
+  margin-top: 28px;
+  animation: fadeInUp .7s .2s ease both;
+}
+.heroTitle {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: #FAF6EE; margin: 0 0 10px;
+  font-weight: 800; letter-spacing: .5px;
+}
+.heroSub {
+  font-size: clamp(.85rem, 1.8vw, 1rem);
+  color: #c4b8a8; margin: 0;
+  max-width: 480px;
+}
+
+/* ── Surcos separator ── */
+.surcos {
+  width: 100%; height: 60px;
+  background: #1A1410;
+  line-height: 0;
+}
+.surcos svg { width: 100%; height: 100%; display: block; }
+
+/* ── Cards section ── */
+.cardsSection {
+  max-width: 960px; margin: 0 auto;
+  padding: 52px 24px 72px;
+}
+.sectionTitle {
+  font-size: 1.25rem; color: #2A2420;
+  font-weight: 700; margin: 0 0 32px;
+  text-align: center; letter-spacing: .2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 20px;
+}
+
+/* ── Card ── */
+.card {
+  background: white; border-radius: 14px;
+  padding: 28px 22px 24px;
+  border: 1.5px solid #E4DACB;
+  display: flex; flex-direction: column;
+  gap: 8px; position: relative;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.cardActive {
+  cursor: pointer;
+  border-color: #C81E1E;
+  box-shadow: 0 4px 18px rgba(200,30,30,.12);
+}
+.cardActive:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(200,30,30,.2);
+}
+.cardSoon { opacity: .65; }
+
+.cardIcon { font-size: 2rem; }
+.cardTitle { font-size: 1rem; font-weight: 700; color: #2A2420; margin: 0; }
+.cardDesc  { font-size: .82rem; color: #7a7266; margin: 0; line-height: 1.5; }
+
+.soonBadge {
+  align-self: flex-start;
+  font-size: .68rem; font-weight: 700;
+  background: #E4DACB; color: #6B5843;
+  padding: 3px 8px; border-radius: 6px;
+  text-transform: uppercase; letter-spacing: .4px;
+  margin-top: 4px;
+}
+.ctaArrow {
+  position: absolute; bottom: 20px; right: 20px;
+  font-size: 1.1rem; color: #C81E1E;
+  transition: transform .2s ease;
+}
+.cardActive:hover .ctaArrow { transform: translateX(4px); }
+
+/* ── Animations ── */
+.fadeUp {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.fadeUp.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

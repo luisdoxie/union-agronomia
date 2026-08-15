@@ -1,0 +1,55 @@
+.panel { background: white; border: 1px solid #E4DACB; border-radius: 12px; padding: 22px 24px; margin-bottom: 22px; }
+.heading { font-size: 1rem; text-transform: uppercase; letter-spacing: .6px; color: #8B1414; margin: 0 0 4px; }
+.sub { font-size: .82rem; color: #7a7266; margin: 0 0 18px; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+label { display: block; font-size: .78rem; font-weight: 600; color: #6B5843; margin-bottom: 5px; margin-top: 14px; }
+
+input[type=text], input[type=tel], select {
+  width: 100%; padding: 10px 12px;
+  border: 1.5px solid #E4DACB; border-radius: 8px;
+  font-size: .92rem; font-family: inherit;
+  background: #fffdfa; color: #2A2420;
+  box-sizing: border-box;
+}
+input:focus, select:focus { outline: none; border-color: #C81E1E; box-shadow: 0 0 0 3px rgba(200,30,30,.12); }
+
+.cantidadBtns {
+  display: flex; gap: 10px; margin: 4px 0 0;
+}
+.cantidadBtn {
+  flex: 1; padding: 10px 0;
+  border: 2px solid #E4DACB; border-radius: 9px;
+  background: #fffdfa; color: #6B5843;
+  font-size: .88rem; font-weight: 600;
+  font-family: inherit; cursor: pointer;
+  transition: border-color .15s, background .15s, color .15s;
+}
+.cantidadBtn:hover { border-color: #C81E1E; color: #C81E1E; }
+.cantidadBtnActive {
+  border-color: #C81E1E; background: #C81E1E;
+  color: white;
+}
+.bloques { margin-top: 4px; }
+
+.materiaBlock {
+  border: 1.5px dashed #E4DACB; border-radius: 10px;
+  padding: 14px 16px 16px; margin-top: 16px; position: relative;
+}
+.num {
+  position: absolute; top: -11px; left: 12px;
+  background: #C81E1E; color: white;
+  font-size: .72rem; font-weight: 700;
+  padding: 2px 9px; border-radius: 20px;
+}
+.prereqDisplay {
+  margin-top: 14px; background: #FAF6EE;
+  border-radius: 8px; padding: 10px 12px;
+  font-size: .82rem; min-height: 20px;
+}
+.tag {
+  display: inline-block; background: #B7E1A4; color: #2f4a24;
+  font-weight: 700; font-size: .72rem;
+  padding: 2px 8px; border-radius: 5px; margin-right: 6px;
+}
+.muted { color: #a39a8c; font-style: italic; }

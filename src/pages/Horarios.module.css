@@ -1,0 +1,85 @@
+.page { padding: 28px 24px 60px; background: #FAF6EE; min-height: 100vh; }
+
+.pageHeader { margin-bottom: 20px; }
+.pageTitle  { font-size: 1.5rem; font-weight: 800; color: #2A2420; margin: 0 0 4px; }
+.pageMeta   { font-size: .8rem; color: #7a7266; margin: 0; }
+
+/* ── Filtros ── */
+.filtrosRow {
+  display: flex; flex-wrap: wrap; gap: 20px;
+  margin-bottom: 20px;
+}
+.filtroGroup { display: flex; flex-direction: column; gap: 6px; }
+.filtroLabel { font-size: .72rem; font-weight: 700; color: #6B5843; text-transform: uppercase; letter-spacing: .5px; }
+.semBtns     { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.semBtn {
+  padding: 5px 13px; border-radius: 20px;
+  border: 1.5px solid #E4DACB;
+  background: white; color: #6B5843;
+  font-size: .78rem; font-weight: 600;
+  font-family: inherit; cursor: pointer;
+  transition: border-color .15s, background .15s, color .15s;
+}
+.semBtn:hover    { border-color: #C81E1E; color: #C81E1E; }
+.semBtnActive    { background: #C81E1E; border-color: #C81E1E; color: white; }
+
+/* ── Docentes ── */
+.docentesBox {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-bottom: 20px;
+  padding: 14px 16px;
+  background: white; border: 1px solid #E4DACB; border-radius: 10px;
+}
+.docenteChip {
+  display: flex; align-items: center; gap: 6px;
+  font-size: .75rem;
+}
+.docenteSigla {
+  background: #8B1414; color: white;
+  font-weight: 700; font-size: .65rem;
+  padding: 2px 7px; border-radius: 5px;
+}
+.docenteNombre { color: #4a4540; }
+
+/* ── Días ── */
+.diasWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 14px;
+}
+
+.diaCol { display: flex; flex-direction: column; gap: 8px; }
+.diaHeader {
+  font-size: .72rem; font-weight: 800;
+  text-align: center; text-transform: uppercase;
+  letter-spacing: .6px;
+  background: #8B1414; color: white;
+  padding: 6px 4px; border-radius: 7px;
+}
+
+/* ── Clase ── */
+.clase {
+  background: white;
+  border: 1.5px solid #E4DACB;
+  border-radius: 9px;
+  padding: 10px 12px;
+  display: flex; flex-direction: column; gap: 3px;
+}
+.claseLab {
+  border-color: #D4A544;
+  background: #fffbf0;
+}
+.claseHora   { font-size: .65rem; font-weight: 700; color: #C81E1E; }
+.claseSigla  { font-size: .7rem; font-weight: 800; color: #2A2420; }
+.claseNombre { font-size: .75rem; color: #4a4540; line-height: 1.3; }
+.claseAux {
+  border-color: #B7E1A4;
+  background: #f4fbf0;
+}
+.claseAula   {
+  font-size: .65rem; color: #8B5200;
+  background: #FFF3E0; border-radius: 4px;
+  padding: 1px 6px; align-self: flex-start;
+  margin-top: 2px;
+}

@@ -1,0 +1,35 @@
+.panel { background: white; border: 1px solid #E4DACB; border-radius: 12px; padding: 22px 24px; margin-bottom: 22px; }
+.heading { font-size: 1rem; text-transform: uppercase; letter-spacing: .6px; color: #8B1414; margin: 0 0 4px; }
+.sub { font-size: .82rem; color: #7a7266; margin: 0 0 10px; }
+.avance { font-size: .78rem; color: #8B1414; font-weight: 700; margin-bottom: 10px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.col { display: flex; flex-direction: column; gap: 6px; }
+.semLabel {
+  font-size: .68rem; font-weight: 700; text-align: center;
+  background: #8B1414; color: white;
+  padding: 5px 2px; border-radius: 6px; margin-bottom: 2px;
+}
+
+.chip {
+  font-size: .66rem; line-height: 1.25;
+  padding: 6px 7px; border-radius: 6px;
+  border: 1.5px solid transparent;
+  cursor: pointer; user-select: none;
+  text-align: left; font-family: inherit;
+  transition: transform .1s ease;
+}
+.chip:hover { transform: translateY(-1px); }
+.aprobada { border-color: #C81E1E; box-shadow: inset 0 0 0 2px white, 0 0 0 1.5px #C81E1E; }
+.aprobada::before { content: "✓ "; font-weight: 800; color: #8B1414; }
+.sigla { display: block; font-weight: 800; opacity: .75; font-size: .62rem; }
+
+.instrumental   { background: #B7E1A4; }
+.especifica     { background: #FCE5A0; }
+.aplicada       { background: #F6C9DD; }
+.complementaria { background: #C6CFE6; }
+.conclusion     { background: #F7F27A; }
+
+.leyenda { display: flex; flex-wrap: wrap; gap: 10px 16px; font-size: .7rem; color: #7a7266; margin-top: 14px; padding-top: 12px; border-top: 1px solid #E4DACB; }
+.leyendaItem { display: flex; align-items: center; gap: 5px; }
+.swatch { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
