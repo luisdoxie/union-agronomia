@@ -2772,48 +2772,117 @@
       "semestre": 9,
       "grupos": [
         {
-          "grupo": "A",
+          "grupo": "6A",
           "materias": {
             "TGL551": {
-              "materia": "PRACTICAS PRE PROFESIO",
-              "docente": "PRADA MERCADO FRANKLIN M"
+              "materia": "PRACTICAS PRE PROFESIONALES SUPERVI",
+              "docente": "SALGADO ROMERO TEOFILO"
+            }
+          },
+          "clases": [
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "TGL551",
+              "aula": "112",
+              "inicio": "13:00",
+              "fin": "16:45"
+            }
+          ]
+        },
+        {
+          "grupo": "9A",
+          "materias": {
+            "TGL551": {
+              "materia": "PRACTICAS PRE PROFESIONALES SUPERVI",
+              "docente": "SANCHEZ RIVERA RAMIRO GONZALO"
+            }
+          },
+          "clases": [
+            {
+              "dia": "MARTES",
+              "materia_sigla": "TGL551",
+              "aula": "957",
+              "inicio": "13:00",
+              "fin": "16:45"
+            }
+          ]
+        },
+        {
+          "grupo": "A5",
+          "materias": {
+            "TGL551": {
+              "materia": "PRACTICAS PRE PROFESIONALES SUPERVI",
+              "docente": "RIVADENEIRA MICHEL CARLOS FERN"
+            }
+          },
+          "clases": [
+            {
+              "dia": "SABADO",
+              "materia_sigla": "TGL551",
+              "aula": "1841",
+              "inicio": "13:00",
+              "fin": "16:45"
+            }
+          ]
+        },
+        {
+          "grupo": "A7",
+          "materias": {
+            "TGL551": {
+              "materia": "PRACTICAS PRE PROFESIONALES SUPERVI",
+              "docente": "RODRIGUEZ MENDEZ NELSON ANTONIO"
+            }
+          },
+          "clases": [
+            {
+              "dia": "JUEVES",
+              "materia_sigla": "TGL551",
+              "aula": "865",
+              "inicio": "08:30",
+              "fin": "12:15"
+            }
+          ]
+        },
+        {
+          "grupo": "A8",
+          "materias": {
+            "TGL551": {
+              "materia": "PRACTICAS PRE PROFESIONALES SUPERVI",
+              "docente": "AGUILERA SANDOVAL GLADYS"
             }
           },
           "clases": [
             {
               "dia": "LUNES",
-              "materia_sigla": "TGL551-A8",
-              "aula": null,
+              "materia_sigla": "TGL551",
+              "aula": "1301",
               "inicio": "15:15",
-              "fin": "16:00"
-            },
-            {
-              "dia": "MARTES",
-              "materia_sigla": "TGL551-9A",
-              "aula": null,
-              "inicio": "14:30",
-              "fin": "15:15"
-            },
-            {
-              "dia": "MIERCOLES",
-              "materia_sigla": "TGL551-A5",
-              "aula": null,
-              "inicio": "10:45",
-              "fin": "11:30"
-            },
-            {
-              "dia": "JUEVES",
-              "materia_sigla": "TGL551-A7",
-              "aula": null,
-              "inicio": "10:00",
-              "fin": "10:45"
+              "fin": "16:45"
             },
             {
               "dia": "VIERNES",
-              "materia_sigla": "TGL551-6A",
-              "aula": null,
-              "inicio": "14:30",
-              "fin": "15:15"
+              "materia_sigla": "TGL551",
+              "aula": "1301",
+              "inicio": "15:15",
+              "fin": "17:30"
+            }
+          ]
+        },
+        {
+          "grupo": "A9",
+          "materias": {
+            "TGL551": {
+              "materia": "PRACTICAS PRE PROFESIONALES SUPERVI",
+              "docente": "KORIYAMA VERA MARCO CLETO"
+            }
+          },
+          "clases": [
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "TGL551",
+              "aula": "1612",
+              "inicio": "13:00",
+              "fin": "16:45"
             }
           ]
         }
