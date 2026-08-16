@@ -133,15 +133,13 @@ export default function Horarios() {
         <div className={styles.diasWrap}>
           {diasMostrar.map(dia => {
             const clases = grupoData.clases
-              .filter(c => c.dia === dia)
+              .filter(c => c.dia === dia && c.inicio && c.fin)
               .sort((a, b) => a.inicio.localeCompare(b.inicio));
 
             return (
               <div key={dia} className={styles.diaCol}>
                 <div className={styles.diaHeader}>{dia.charAt(0) + dia.slice(1).toLowerCase()}</div>
-                {clases
-                  .filter(c => c.inicio && c.fin)
-                  .map((c, i) => {
+                {clases.map((c, i) => {
                   const base = siglaBase(c.materia_sigla);
                   const info = grupoData.materias[base];
                   const esLab = c.materia_sigla.includes('-');

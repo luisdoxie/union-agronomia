@@ -344,8 +344,22 @@
             },
             {
               "dia": "MARTES",
+              "materia_sigla": "BOT101-C1",
+              "aula": "LAB 612-10",
+              "inicio": "10:00",
+              "fin": "11:30"
+            },
+            {
+              "dia": "MARTES",
               "materia_sigla": "QMC101-C1",
               "aula": "LAB 615-03",
+              "inicio": "11:30",
+              "fin": "13:00"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "BOT101-C2",
+              "aula": "LAB 612-10",
               "inicio": "11:30",
               "fin": "13:00"
             },
@@ -388,8 +402,8 @@
               "dia": "JUEVES",
               "materia_sigla": "FIS101-C2",
               "aula": "LAB 613-06",
-              "inicio": null,
-              "fin": null
+              "inicio": "16:00",
+              "fin": "17:30"
             },
             {
               "dia": "VIERNES",
