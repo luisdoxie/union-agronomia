@@ -34,59 +34,59 @@ export default function Noticias() {
         {EVENTOS.map(ev => (
           <article key={ev.id} className={styles.card}>
             {/* Banner imagen / placeholder festivo */}
-            {ev.imagen
-              ? <img src={ev.imagen} alt="Flyer del evento" className={styles.banner} />
-              : (
-                <div className={styles.bannerPlaceholder} aria-hidden>
-                  <span className={styles.confetti}>🎊</span>
-                  <span className={styles.confetti}>🎉</span>
-                  <span className={styles.confetti}>🥳</span>
-                  <span className={styles.confetti}>🎈</span>
-                  <span className={styles.confetti}>✨</span>
-                </div>
-              )
-            }
-
-            {/* Título */}
-            <h2 className={styles.titulo}>{ev.titulo}</h2>
-
-            {/* Chips de fecha / hora / lugar */}
-            <div className={styles.chips}>
-              <span className={styles.chip}>📅 {ev.fecha}</span>
-              <span className={styles.chip}>⏰ {ev.hora}</span>
-              <span className={styles.chip}>📍 {ev.lugar}</span>
+            <div className={styles.bannerWrap}>
+              {ev.imagen
+                ? <img src={ev.imagen} alt="Flyer del evento" className={styles.banner} />
+                : (
+                  <div className={styles.bannerPlaceholder} aria-hidden>
+                    <span className={styles.confetti}>🎊</span>
+                    <span className={styles.confetti}>🎉</span>
+                    <span className={styles.confetti}>🥳</span>
+                    <span className={styles.confetti}>🎈</span>
+                    <span className={styles.confetti}>✨</span>
+                  </div>
+                )
+              }
             </div>
 
-            {/* Cuerpo */}
-            <p className={styles.cuerpo}>{ev.cuerpo}</p>
+            {/* Contenido */}
+            <div className={styles.contenido}>
+              <h2 className={styles.titulo}>{ev.titulo}</h2>
 
-            {/* Actividades */}
-            <ul className={styles.lista}>
-              {ev.actividades.map((a, i) => (
-                <li key={i} className={styles.listItem}>
-                  <span className={styles.liEmoji}>{a.emoji}</span>
-                  {a.texto}
-                </li>
-              ))}
-            </ul>
+              <div className={styles.chips}>
+                <span className={styles.chip}>📅 {ev.fecha}</span>
+                <span className={styles.chip}>⏰ {ev.hora}</span>
+                <span className={styles.chip}>📍 {ev.lugar}</span>
+              </div>
 
-            <p className={styles.cierre}>{ev.cierre}</p>
+              <p className={styles.cuerpo}>{ev.cuerpo}</p>
 
-            {/* Botón de ubicación */}
-            <a
-              href={ev.mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.mapsBtn}
-              aria-label="Ver ubicación en Google Maps"
-            >
-              <span className={styles.mapsBtnPin}>📍</span>
-              <span className={styles.mapsBtnTexto}>
-                <span className={styles.mapsBtnTitulo}>¿Cómo llegar?</span>
-                <span className={styles.mapsBtnSub}>Abrir en Google Maps</span>
-              </span>
-              <span className={styles.mapsBtnArrow}>→</span>
-            </a>
+              <ul className={styles.lista}>
+                {ev.actividades.map((a, i) => (
+                  <li key={i} className={styles.listItem}>
+                    <span className={styles.liEmoji}>{a.emoji}</span>
+                    {a.texto}
+                  </li>
+                ))}
+              </ul>
+
+              <p className={styles.cierre}>{ev.cierre}</p>
+
+              <a
+                href={ev.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.mapsBtn}
+                aria-label="Ver ubicación en Google Maps"
+              >
+                <span className={styles.mapsBtnPin}>📍</span>
+                <span className={styles.mapsBtnTexto}>
+                  <span className={styles.mapsBtnTitulo}>¿Cómo llegar?</span>
+                  <span className={styles.mapsBtnSub}>Abrir en Google Maps</span>
+                </span>
+                <span className={styles.mapsBtnArrow}>→</span>
+              </a>
+            </div>
           </article>
         ))}
       </div>
