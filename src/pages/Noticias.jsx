@@ -1,4 +1,5 @@
 import styles from './Noticias.module.css';
+import fiestaImg from '../assets/FIESTA.jpg';
 
 const EVENTOS = [
   {
@@ -17,7 +18,7 @@ const EVENTOS = [
       { emoji: '😂',    texto: 'Concurso de la Mejor Reina Mufa' },
     ],
     cierre: '¡Este proyecto es de todos y para todos!🔥',
-    // imagen: '/assets/fiesta.jpg',   ← descomentar cuando agregues la imagen
+    imagen: fiestaImg,
   },
 ];
 
