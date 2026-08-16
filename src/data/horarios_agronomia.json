@@ -2146,28 +2146,28 @@
               "materia_sigla": "INA312",
               "aula": "AULA 616-18",
               "inicio": "08:30",
-              "fin": "10:00"
+              "fin": "10:45"
             },
             {
               "dia": "LUNES",
               "materia_sigla": "DRS332",
               "aula": "AULA 610-09",
               "inicio": "10:45",
-              "fin": "12:15"
+              "fin": "13:00"
             },
             {
               "dia": "MARTES",
               "materia_sigla": "INA313",
               "aula": "AULA 610-03",
               "inicio": "08:30",
-              "fin": "10:00"
+              "fin": "10:45"
             },
             {
               "dia": "MARTES",
               "materia_sigla": "DRS333",
               "aula": "AULA 610-09",
-              "inicio": "11:30",
-              "fin": "13:00"
+              "inicio": "10:45",
+              "fin": "14:30"
             },
             {
               "dia": "MARTES",
@@ -2180,8 +2180,8 @@
               "dia": "MIERCOLES",
               "materia_sigla": "AGR324",
               "aula": "AULA 616-15",
-              "inicio": "09:15",
-              "fin": "10:45"
+              "inicio": "08:30",
+              "fin": "13:00"
             },
             {
               "dia": "MIERCOLES",
@@ -2195,7 +2195,7 @@
               "materia_sigla": "AGR325",
               "aula": "AULA 616-18",
               "inicio": "15:15",
-              "fin": "16:45"
+              "fin": "17:30"
             },
             {
               "dia": "JUEVES",
@@ -2246,7 +2246,7 @@
               "dia": "LUNES",
               "materia_sigla": "DRS333",
               "aula": "AULA 610-10",
-              "inicio": "10:45",
+              "inicio": "10:00",
               "fin": "12:15"
             },
             {
@@ -2254,7 +2254,7 @@
               "materia_sigla": "AGR325",
               "aula": "AULA 610-10",
               "inicio": "13:00",
-              "fin": "14:30"
+              "fin": "15:15"
             },
             {
               "dia": "MARTES",
@@ -2268,14 +2268,7 @@
               "materia_sigla": "DRS332",
               "aula": "AULA 610-08",
               "inicio": "08:30",
-              "fin": "10:00"
-            },
-            {
-              "dia": "MIERCOLES",
-              "materia_sigla": "DRS332",
-              "aula": "AULA 610-08",
-              "inicio": "10:00",
-              "fin": "11:30"
+              "fin": "12:15"
             },
             {
               "dia": "MIERCOLES",
@@ -2288,8 +2281,8 @@
               "dia": "MIERCOLES",
               "materia_sigla": "AGR324",
               "aula": "610-07",
-              "inicio": "15:15",
-              "fin": "16:45"
+              "inicio": "14:30",
+              "fin": "19:00"
             },
             {
               "dia": "VIERNES",
@@ -2302,7 +2295,7 @@
               "dia": "SABADO",
               "materia_sigla": "INA313",
               "aula": "AULA 616-16",
-              "inicio": "10:45",
+              "inicio": "10:00",
               "fin": "12:15"
             },
             {
@@ -2310,13 +2303,6 @@
               "materia_sigla": "INA312",
               "aula": "AULA 616-17",
               "inicio": "13:45",
-              "fin": "15:15"
-            },
-            {
-              "dia": "SABADO",
-              "materia_sigla": "INA312",
-              "aula": "AULA 616-17",
-              "inicio": "16:00",
               "fin": "17:30"
             }
           ]
@@ -2346,29 +2332,29 @@
               "dia": "JUEVES",
               "materia_sigla": "DRS333",
               "aula": "AULA 610-11",
-              "inicio": "09:15",
-              "fin": "10:45"
+              "inicio": "08:30",
+              "fin": "12:15"
             },
             {
               "dia": "VIERNES",
               "materia_sigla": "AGR324",
               "aula": "AULA 610-09",
-              "inicio": "09:15",
-              "fin": "10:45"
+              "inicio": "08:30",
+              "fin": "13:00"
             },
             {
               "dia": "VIERNES",
               "materia_sigla": "INA312",
               "aula": "AULA 616-12",
-              "inicio": "13:45",
-              "fin": "15:15"
+              "inicio": "13:00",
+              "fin": "16:45"
             },
             {
               "dia": "SABADO",
               "materia_sigla": "DRS332",
               "aula": "AULA 616-13",
-              "inicio": "09:15",
-              "fin": "10:45"
+              "inicio": "08:30",
+              "fin": "12:15"
             }
           ]
         }
@@ -2406,36 +2392,36 @@
               "dia": "MARTES",
               "materia_sigla": "DRS431",
               "aula": "AULA 616-12",
-              "inicio": "09:15",
-              "fin": "10:45"
+              "inicio": "08:30",
+              "fin": "11:30"
             },
             {
               "dia": "MIERCOLES",
               "materia_sigla": "AGR421",
               "aula": "AULA 610-13",
               "inicio": "08:30",
-              "fin": "10:00"
+              "fin": "10:45"
             },
             {
               "dia": "MIERCOLES",
               "materia_sigla": "AGR423",
               "aula": "AULA 610-09",
               "inicio": "10:45",
-              "fin": "12:15"
+              "fin": "13:00"
             },
             {
               "dia": "MIERCOLES",
               "materia_sigla": "INA411",
               "aula": "LAB RIEG",
-              "inicio": "13:45",
-              "fin": "16:00"
+              "inicio": "13:00",
+              "fin": "16:45"
             },
             {
               "dia": "JUEVES",
               "materia_sigla": "AGR421",
               "aula": "AULA 610-13",
               "inicio": "08:30",
-              "fin": "10:00"
+              "fin": "10:45"
             },
             {
               "dia": "JUEVES",
@@ -2445,11 +2431,11 @@
               "fin": "16:45"
             },
             {
-              "dia": "VIERNES",
+              "dia": "LUNES",
               "materia_sigla": "AGR422",
               "aula": "AULA 616-12",
-              "inicio": "10:00",
-              "fin": "11:30"
+              "inicio": "08:30",
+              "fin": "13:00"
             }
           ]
         },
@@ -2482,15 +2468,15 @@
               "dia": "LUNES",
               "materia_sigla": "DRS431",
               "aula": "AULA 616-12",
-              "inicio": "10:00",
-              "fin": "11:30"
+              "inicio": "09:15",
+              "fin": "12:15"
             },
             {
               "dia": "MARTES",
               "materia_sigla": "AGR422",
               "aula": "AULA 616-15",
-              "inicio": "14:30",
-              "fin": "16:00"
+              "inicio": "13:00",
+              "fin": "17:30"
             },
             {
               "dia": "MIERCOLES",
@@ -2511,21 +2497,28 @@
               "materia_sigla": "AGR421",
               "aula": "AULA 610-13",
               "inicio": "10:45",
-              "fin": "12:15"
+              "fin": "13:00"
             },
             {
               "dia": "VIERNES",
               "materia_sigla": "INA411",
               "aula": "LAB RIEG",
-              "inicio": "10:45",
-              "fin": "12:15"
+              "inicio": "10:00",
+              "fin": "13:45"
             },
             {
               "dia": "VIERNES",
               "materia_sigla": "AGR423",
               "aula": "AULA 610-09",
               "inicio": "13:45",
-              "fin": "15:15"
+              "fin": "16:00"
+            },
+            {
+              "dia": "VIERNES",
+              "materia_sigla": "AGR421",
+              "aula": "AULA 610-13",
+              "inicio": "07:00",
+              "fin": "09:15"
             }
           ]
         },
@@ -2551,28 +2544,28 @@
               "materia_sigla": "AGR421",
               "aula": "AULA 610-08",
               "inicio": "08:30",
-              "fin": "10:00"
+              "fin": "10:45"
             },
             {
               "dia": "MARTES",
               "materia_sigla": "DRS431",
               "aula": "AULA 610-11",
-              "inicio": "09:15",
-              "fin": "10:45"
+              "inicio": "08:30",
+              "fin": "11:30"
             },
             {
               "dia": "MIERCOLES",
               "materia_sigla": "AGR421",
               "aula": "AULA 610-08",
               "inicio": "10:45",
-              "fin": "12:15"
+              "fin": "13:00"
             },
             {
               "dia": "JUEVES",
               "materia_sigla": "AGR422",
               "aula": "AULA 616-12",
-              "inicio": "10:00",
-              "fin": "11:30"
+              "inicio": "08:30",
+              "fin": "13:00"
             }
           ]
         }
@@ -2610,22 +2603,22 @@
               "dia": "LUNES",
               "materia_sigla": "DRS433",
               "aula": "AULA 616-13",
-              "inicio": "08:30",
-              "fin": "10:00"
+              "inicio": "08:00",
+              "fin": "10:45"
             },
             {
               "dia": "MARTES",
               "materia_sigla": "AGR424",
               "aula": "AULA 610-02",
-              "inicio": "09:15",
-              "fin": "10:45"
+              "inicio": "08:30",
+              "fin": "12:15"
             },
             {
               "dia": "MIERCOLES",
               "materia_sigla": "INA412",
               "aula": "LAB DIS. RIE",
-              "inicio": "09:15",
-              "fin": "10:45"
+              "inicio": "08:30",
+              "fin": "12:15"
             },
             {
               "dia": "JUEVES",
@@ -2638,15 +2631,15 @@
               "dia": "JUEVES",
               "materia_sigla": "TGL451",
               "aula": "LAB-ADMINIST",
-              "inicio": "13:45",
-              "fin": "15:15"
+              "inicio": "13:00",
+              "fin": "16:45"
             },
             {
               "dia": "VIERNES",
               "materia_sigla": "DRS432",
               "aula": "AULA 616-15",
-              "inicio": "09:15",
-              "fin": "10:45"
+              "inicio": "08:30",
+              "fin": "11:30"
             }
           ]
         },
@@ -2679,20 +2672,20 @@
               "dia": "LUNES",
               "materia_sigla": "AGR424",
               "aula": "AULA 610-11",
-              "inicio": "09:15",
-              "fin": "10:45"
+              "inicio": "08:00",
+              "fin": "15:15"
             },
             {
               "dia": "LUNES",
               "materia_sigla": "DRS433",
-              "aula": "AULA 616-15",
+              "aula": "AULA 610-07",
               "inicio": "13:00",
-              "fin": "14:30"
+              "fin": "15:15"
             },
             {
               "dia": "MARTES",
               "materia_sigla": "DRS433",
-              "aula": "AULA 616-16",
+              "aula": "AULA 610-07",
               "inicio": "13:45",
               "fin": "15:15"
             },
@@ -2700,29 +2693,29 @@
               "dia": "MARTES",
               "materia_sigla": "DRS432",
               "aula": "AULA 610-03",
-              "inicio": "16:00",
+              "inicio": "15:15",
               "fin": "18:15"
             },
             {
               "dia": "MIERCOLES",
               "materia_sigla": "TGL451-D",
               "aula": "LAB-ADMINIST",
-              "inicio": "15:15",
-              "fin": "16:45"
+              "inicio": "14:30",
+              "fin": "18:15"
             },
             {
               "dia": "VIERNES",
-              "materia_sigla": "TGL451-B",
-              "aula": "AULA 610-11",
-              "inicio": "09:15",
-              "fin": "10:45"
+              "materia_sigla": "DRS432",
+              "aula": "AULA 616-14",
+              "inicio": "08:30",
+              "fin": "12:15"
             },
             {
               "dia": "VIERNES",
               "materia_sigla": "INA412",
               "aula": "LAB DIS. RIE",
-              "inicio": "15:15",
-              "fin": "16:45"
+              "inicio": "14:30",
+              "fin": "18:15"
             }
           ]
         },
@@ -2745,24 +2738,38 @@
           "clases": [
             {
               "dia": "LUNES",
-              "materia_sigla": "DRS433",
+              "materia_sigla": "TGL451",
               "aula": "AULA 610-10",
               "inicio": "13:00",
-              "fin": "14:30"
+              "fin": "16:45"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "DRS433",
+              "aula": "AULA 610-10",
+              "inicio": "13:45",
+              "fin": "15:15"
+            },
+            {
+              "dia": "MARTES",
+              "materia_sigla": "DRS432",
+              "aula": "AULA 616-14",
+              "inicio": "15:15",
+              "fin": "18:15"
             },
             {
               "dia": "MIERCOLES",
               "materia_sigla": "DRS433",
               "aula": "AULA 610-10",
               "inicio": "08:30",
-              "fin": "10:00"
+              "fin": "10:45"
             },
             {
               "dia": "MIERCOLES",
               "materia_sigla": "TGL451-C",
               "aula": "AULA 610-11",
-              "inicio": "13:45",
-              "fin": "15:15"
+              "inicio": "13:00",
+              "fin": "17:30"
             }
           ]
         }
