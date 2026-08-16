@@ -48,34 +48,36 @@ export default function CasosEspeciales() {
   const puedeGenerar = filas[0] !== null;
 
   return (
-    <div className={styles.wrap}>
-      <div>
-        <FormularioCaso
-          form={form}
-          onFormChange={handleFormChange}
-          materias={materias}
-          onMateriaChange={handleMateriaChange}
-          malla={malla}
-          materiasPorSigla={materiasPorSigla}
-        />
-      </div>
-
-      <div className={styles.previewCol}>
-        <div className={styles.previewHeader}>
-          <h2>Vista previa de tu carta</h2>
+    <div className={styles.page}>
+      <div className={styles.wrap}>
+        <div>
+          <FormularioCaso
+            form={form}
+            onFormChange={handleFormChange}
+            materias={materias}
+            onMateriaChange={handleMateriaChange}
+            malla={malla}
+            materiasPorSigla={materiasPorSigla}
+          />
         </div>
-        <VistaPreviaCarta form={form} filas={filas} />
-        <button
-          className={styles.btnPDF}
-          disabled={!puedeGenerar}
-          onClick={() => generarPDF({ form, filas })}
-        >
-          Descargar carta en PDF
-        </button>
-        <p className={styles.hint}>Se descarga lista para imprimir, firmar y adjuntar fotocopia de C.I.</p>
+
+        <div className={styles.previewCol}>
+          <div className={styles.previewHeader}>
+            <h2>Vista previa de tu carta</h2>
+          </div>
+          <VistaPreviaCarta form={form} filas={filas} />
+          <button
+            className={styles.btnPDF}
+            disabled={!puedeGenerar}
+            onClick={() => generarPDF({ form, filas })}
+          >
+            Descargar carta en PDF
+          </button>
+          <p className={styles.hint}>Se descarga lista para imprimir, firmar y adjuntar fotocopia de C.I.</p>
+        </div>
       </div>
 
-      {/* Nota de documentos requeridos — ocupa ambas columnas */}
+      {/* Nota de documentos — fuera del grid, ancho propio */}
       <div className={styles.docsNota}>
         <div className={styles.docsNotaIcono}>📋</div>
         <div>
