@@ -1,0 +1,201 @@
+.page {
+  padding: 24px 28px 48px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.pageHeader { margin-bottom: 28px; }
+
+.pageTitle {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #1A1410;
+  margin: 0 0 4px;
+}
+
+.pageMeta {
+  font-size: .85rem;
+  color: #6b5a4e;
+  margin: 0;
+}
+
+/* ── Card / flyer ── */
+.feed { display: flex; flex-direction: column; gap: 32px; }
+
+.card {
+  background: #1A1410;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(200,30,30,.25), 0 2px 8px rgba(0,0,0,.4);
+  border: 1.5px solid rgba(200,30,30,.35);
+}
+
+/* ── Banner imagen ── */
+.banner {
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Placeholder festivo (mientras no hay imagen) ── */
+.bannerPlaceholder {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, #3a0808 0%, #1A1410 40%, #2a1a00 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bannerPlaceholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(200,30,30,.3) 0%, transparent 70%);
+}
+
+.confetti {
+  font-size: 2.4rem;
+  animation: floatEmoji 3s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+}
+.confetti:nth-child(1) { animation-delay: 0s; }
+.confetti:nth-child(2) { animation-delay: .4s; }
+.confetti:nth-child(3) { animation-delay: .8s; }
+.confetti:nth-child(4) { animation-delay: 1.2s; }
+.confetti:nth-child(5) { animation-delay: 1.6s; }
+
+@keyframes floatEmoji {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%       { transform: translateY(-10px) rotate(8deg); }
+}
+
+/* ── Contenido interior ── */
+.titulo {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #FAF6EE;
+  text-align: center;
+  line-height: 1.4;
+  padding: 22px 24px 8px;
+  margin: 0;
+  text-shadow: 0 0 18px rgba(200,30,30,.6);
+}
+
+/* ── Chips fecha/hora/lugar ── */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 24px 16px;
+  justify-content: center;
+}
+
+.chip {
+  background: rgba(212,165,68,.15);
+  border: 1px solid rgba(212,165,68,.4);
+  color: #D4A544;
+  font-size: .78rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* ── Cuerpo de texto ── */
+.cuerpo {
+  color: #c4b8a8;
+  font-size: .9rem;
+  line-height: 1.7;
+  padding: 0 24px 16px;
+  margin: 0;
+  white-space: pre-line;
+  text-align: center;
+}
+
+/* ── Lista de actividades ── */
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,.05);
+  border-radius: 10px;
+  padding: 10px 14px;
+  color: #FAF6EE;
+  font-size: .88rem;
+  font-weight: 600;
+  border-left: 3px solid #C81E1E;
+}
+
+.liEmoji { font-size: 1.2rem; flex-shrink: 0; }
+
+/* ── Cierre ── */
+.cierre {
+  text-align: center;
+  color: #C81E1E;
+  font-size: .95rem;
+  font-weight: 800;
+  padding: 4px 24px 24px;
+  margin: 0;
+  letter-spacing: .2px;
+}
+
+/* ── Botón de ubicación ── */
+.mapsBtn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 24px 28px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #C81E1E 0%, #8B1414 100%);
+  border-radius: 14px;
+  text-decoration: none;
+  color: #FAF6EE;
+  box-shadow: 0 4px 20px rgba(200,30,30,.45);
+  transition: transform .15s, box-shadow .15s;
+}
+
+.mapsBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(200,30,30,.6);
+}
+
+.mapsBtnPin { font-size: 1.6rem; flex-shrink: 0; }
+
+.mapsBtnTexto {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.mapsBtnTitulo { font-size: .95rem; font-weight: 800; }
+.mapsBtnSub    { font-size: .75rem; opacity: .8; }
+
+.mapsBtnArrow {
+  font-size: 1.4rem;
+  font-weight: 700;
+  opacity: .7;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  .page { padding: 16px 14px 40px; }
+  .titulo { font-size: .95rem; padding: 18px 16px 8px; }
+  .chips, .cuerpo, .lista, .cierre { padding-left: 16px; padding-right: 16px; }
+  .mapsBtn { margin: 0 16px 24px; }
+}

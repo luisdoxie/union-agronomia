@@ -33,7 +33,8 @@ const CARDS = [
     icon: '📢',
     title: 'Noticias',
     desc: 'Novedades, eventos y comunicados de la carrera.',
-    soon: true,
+    route: '/noticias',
+    active: true,
   },
 ];
 

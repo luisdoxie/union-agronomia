@@ -7,7 +7,7 @@ const NAV_ITEMS = [
   { to: '/casos-especiales', icon: '📄', label: 'Casos Especiales' },
   { to: '/plan-estudio',     icon: '📚', label: 'Plan de Estudio' },
   { to: '/horarios',         icon: '🗓️', label: 'Horarios' },
-  { to: '/noticias',         icon: '📢', label: 'Noticias', soon: true },
+  { to: '/noticias',         icon: '📢', label: 'Noticias' },
 ];
 
 export default function Sidebar({ open, mobileOpen, onToggle, onMobileClose }) {
