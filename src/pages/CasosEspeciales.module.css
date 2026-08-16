@@ -29,3 +29,61 @@
 .btnPDF:hover { filter: brightness(1.06); }
 .btnPDF:disabled { opacity: .5; cursor: not-allowed; }
 .hint { font-size: .72rem; color: #a39a8c; margin-top: 6px; }
+
+/* ── Nota documentos requeridos ── */
+.docsNota {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #fffbf0;
+  border: 1.5px solid #D4A544;
+  border-left: 5px solid #D4A544;
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin-top: 8px;
+}
+
+.docsNotaIcono {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.docsNotaTitulo {
+  font-size: .88rem;
+  font-weight: 800;
+  color: #5a3e00;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+
+.docsLista {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.docsLista li {
+  font-size: .86rem;
+  color: #3a2800;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.docsTag {
+  display: inline-block;
+  background: rgba(212,165,68,.2);
+  border: 1px solid rgba(212,165,68,.5);
+  color: #7a5200;
+  font-size: .7rem;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 10px;
+  margin-left: 6px;
+  vertical-align: middle;
+  text-transform: lowercase;
+}

@@ -74,6 +74,20 @@ export default function CasosEspeciales() {
         </button>
         <p className={styles.hint}>Se descarga lista para imprimir, firmar y adjuntar fotocopia de C.I.</p>
       </div>
+
+      {/* Nota de documentos requeridos — ocupa ambas columnas */}
+      <div className={styles.docsNota}>
+        <div className={styles.docsNotaIcono}>📋</div>
+        <div>
+          <p className={styles.docsNotaTitulo}>Documentos requeridos para tramitar el Caso Especial</p>
+          <ol className={styles.docsLista}>
+            <li>Carta dirigida al Director de Carrera <span className={styles.docsTag}>generada aquí</span></li>
+            <li>Avance Académico <span className={styles.docsTag}>generado del perfil</span></li>
+            <li>Boleta de Inscripción del semestre en curso</li>
+            <li>Fotocopia de Cédula de Identidad</li>
+          </ol>
+        </div>
+      </div>
     </div>
   );
 }
