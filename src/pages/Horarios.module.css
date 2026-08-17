@@ -1,4 +1,7 @@
 .page { padding: 28px 24px 60px; background: #FAF6EE; min-height: 100vh; }
+@media (max-width: 480px) {
+  .page { padding: 16px 12px 48px; }
+}
 
 .pageHeader { margin-bottom: 20px; }
 .pageTitle  { font-size: 1.5rem; font-weight: 800; color: #2A2420; margin: 0 0 4px; }
