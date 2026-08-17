@@ -1,12 +1,11 @@
-import { jsPDF } from 'jspdf';
-
 const MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
 function fechaHoy() {
   const d = new Date();
   return `Santa Cruz de la Sierra, ${d.getDate()} de ${MESES[d.getMonth()]} de ${d.getFullYear()}`;
 }
 
-export function generarPDF({ form, filas }) {
+export async function generarPDF({ form, filas }) {
+  const { jsPDF } = await import('jspdf');
   const { nombre, registro, celular, director, semestre } = form;
   const nombreVal   = nombre ? nombre.toUpperCase() : '________________________';
   const registroVal = registro || '________________________';

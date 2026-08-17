@@ -36,7 +36,7 @@ export default function Noticias() {
             {/* Banner imagen / placeholder festivo */}
             <div className={styles.bannerWrap}>
               {ev.imagen
-                ? <img src={ev.imagen} alt="Flyer del evento" className={styles.banner} />
+                ? <img src={ev.imagen} alt="Flyer del evento" className={styles.banner} loading="lazy" />
                 : (
                   <div className={styles.bannerPlaceholder} aria-hidden>
                     <span className={styles.confetti}>🎊</span>
