@@ -25,8 +25,7 @@ const CARDS = [
     icon: '🗓️',
     title: 'Horarios',
     desc: 'Encontrá los horarios por materia y grupo actualizados.',
-    route: '/horarios',
-    active: true,
+    soon: true,
   },
   {
     id: 'noticias',

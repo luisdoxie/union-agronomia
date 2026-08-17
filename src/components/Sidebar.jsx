@@ -6,7 +6,7 @@ const NAV_ITEMS = [
   { to: '/',                 icon: '🏠', label: 'Inicio' },
   { to: '/casos-especiales', icon: '📄', label: 'Casos Especiales' },
   { to: '/plan-estudio',     icon: '📚', label: 'Plan de Estudio' },
-  { to: '/horarios',         icon: '🗓️', label: 'Horarios' },
+  { to: '/horarios',         icon: '🗓️', label: 'Horarios', soon: true },
   { to: '/noticias',         icon: '📢', label: 'Noticias' },
 ];
 
