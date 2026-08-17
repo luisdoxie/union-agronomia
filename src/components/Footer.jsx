@@ -9,7 +9,7 @@ const RECURSOS = [
   { label: 'Plan de Estudio',      to: '/plan-estudio' },
   { label: 'Horarios',             to: '/horarios' },
   { label: 'Casos Especiales',     to: '/casos-especiales' },
-  { label: 'Noticias',             to: '/noticias',    soon: true },
+  { label: 'Noticias',             to: '/noticias' },
 ];
 
 const COMUNIDAD = [
