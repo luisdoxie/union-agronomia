@@ -64,7 +64,7 @@ export default function AdminVisitas() {
             <div key={b.key} className={styles.card}>
               <h2 className={styles.cardLabel}>{b.label}</h2>
               <p className={styles.cardValue}>{datos[b.key].total}</p>
-              <p className={styles.cardSub}>pageviews</p>
+              <p className={styles.cardSub}>cargas de página</p>
               <p className={styles.cardValue}>{datos[b.key].unicos}</p>
               <p className={styles.cardSub}>visitantes únicos</p>
             </div>
