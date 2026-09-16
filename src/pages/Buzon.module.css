@@ -1,0 +1,133 @@
+.page {
+  max-width: 720px;
+  margin: 28px auto;
+  padding: 0 20px 60px;
+}
+
+.pageHeader { margin-bottom: 22px; }
+
+.pageTitle {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #1A1410;
+  margin: 0 0 4px;
+}
+
+.pageMeta {
+  font-size: .85rem;
+  color: #6b5a4e;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #E4DACB;
+  border-radius: 12px;
+  padding: 24px 26px;
+}
+
+.label {
+  display: block;
+  font-size: .78rem;
+  font-weight: 600;
+  color: #6B5843;
+  margin: 16px 0 5px;
+}
+.label:first-child { margin-top: 0; }
+
+.select, .input, .textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #E4DACB;
+  border-radius: 8px;
+  font-size: .92rem;
+  font-family: inherit;
+  background: #fffdfa;
+  color: #2A2420;
+  box-sizing: border-box;
+}
+.textarea { resize: vertical; min-height: 130px; }
+.select:focus, .input:focus, .textarea:focus {
+  outline: none;
+  border-color: #C81E1E;
+  box-shadow: 0 0 0 3px rgba(200,30,30,.12);
+}
+
+.honeypot {
+  position: absolute;
+  width: 1px; height: 1px;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 20px 0 0;
+  font-size: .85rem;
+  font-weight: 600;
+  color: #6B5843;
+  cursor: pointer;
+}
+.checkboxRow input { width: 16px; height: 16px; accent-color: #C81E1E; cursor: pointer; }
+
+.identBlock {
+  border: 1.5px dashed #E4DACB;
+  border-radius: 10px;
+  padding: 12px 16px 16px;
+  margin-top: 14px;
+}
+
+.btnEnviar {
+  width: 100%;
+  margin-top: 22px;
+  background: linear-gradient(135deg, #C81E1E, #8B1414);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 9px;
+  font-size: .92rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(200,30,30,.3);
+}
+.btnEnviar:hover:not(:disabled) { filter: brightness(1.06); }
+.btnEnviar:disabled { opacity: .5; cursor: not-allowed; }
+
+.ok {
+  margin: 16px 0 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #eef8ea;
+  border: 1px solid #B7E1A4;
+  color: #2f4a24;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.err {
+  margin: 16px 0 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #fdecec;
+  border: 1px solid #f3b8b8;
+  color: #8B1414;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.disclaimer {
+  font-size: .74rem;
+  color: #a39a8c;
+  margin: 16px 4px 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .page { padding: 0 14px 48px; }
+  .panel { padding: 20px 18px; }
+}

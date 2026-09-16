@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { to: '/plan-estudio',     icon: '📚', label: 'Plan de Estudio' },
   { to: '/horarios',         icon: '🗓️', label: 'Horarios' },
   { to: '/noticias',         icon: '📢', label: 'Noticias' },
+  { to: '/buzon',            icon: '📮', label: 'Buzón' },
 ];
 
 export default function Sidebar({ open, mobileOpen, onToggle, onMobileClose }) {

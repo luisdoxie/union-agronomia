@@ -36,6 +36,14 @@ const CARDS = [
     route: '/noticias',
     active: true,
   },
+  {
+    id: 'buzon',
+    icon: '📮',
+    title: 'Buzón',
+    desc: 'Dejá tu reclamo, denuncia o sugerencia, anónimo si preferís.',
+    route: '/buzon',
+    active: true,
+  },
 ];
 
 function SurcosSeparator() {
