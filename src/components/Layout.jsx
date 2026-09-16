@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
+import { registrarVisita } from '../utils/visitas';
 import styles from './Layout.module.css';
 
 export default function Layout() {
@@ -9,8 +10,11 @@ export default function Layout() {
   const [mobileOpen, setMobileOpen]   = useState(false);
   const location = useLocation();
 
-  // Cierra el drawer mobile al navegar
-  useEffect(() => { setMobileOpen(false); }, [location]);
+  // Cierra el drawer mobile al navegar y registra la visita (fire-and-forget)
+  useEffect(() => {
+    setMobileOpen(false);
+    registrarVisita(location.pathname);
+  }, [location]);
 
   // En desktop el sidebar arranca expandido; en mobile arranca cerrado
   useEffect(() => {
