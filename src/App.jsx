@@ -7,6 +7,7 @@ import Horarios from './pages/Horarios';
 import Noticias from './pages/Noticias';
 import Buzon from './pages/Buzon';
 import AdminVisitas from './pages/AdminVisitas';
+import AdminBuzon from './pages/AdminBuzon';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="noticias" element={<Noticias />} />
         <Route path="buzon" element={<Buzon />} />
         <Route path="admin-visitas" element={<AdminVisitas />} />
+        <Route path="admin-buzon" element={<AdminBuzon />} />
       </Route>
     </Routes>
   );

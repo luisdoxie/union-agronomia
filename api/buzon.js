@@ -8,12 +8,11 @@ const CATEGORIA_LABELS = {
   otro: 'Otro',
 };
 
-export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    res.status(405).json({ ok: false, error: 'Método no permitido' });
-    return;
-  }
+const ESTADOS_VALIDOS = ['pendiente', 'atendido'];
 
+const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY);
+
+async function crear(req, res) {
   const { categoria, materia, mensaje, identificado, nombre, contacto, empresa } = req.body ?? {};
 
   // Honeypot: si un bot llenó este campo oculto, respondemos éxito falso sin guardar nada
@@ -26,8 +25,6 @@ export default async function handler(req, res) {
     res.status(400).json({ ok: false, error: 'Faltan datos requeridos' });
     return;
   }
-
-  const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY);
 
   const { data, error } = await supabase
     .from('buzon_mensajes')
@@ -83,4 +80,65 @@ export default async function handler(req, res) {
   }
 
   res.status(200).json({ ok: true, folio });
+}
+
+function claveValida(req) {
+  const clave = req.headers['x-admin-key'];
+  return !!clave && clave === process.env.BUZON_ADMIN_KEY;
+}
+
+async function listar(req, res) {
+  if (!claveValida(req)) {
+    res.status(401).json({ ok: false, error: 'Clave inválida' });
+    return;
+  }
+
+  const { data, error } = await supabase
+    .from('buzon_mensajes')
+    .select('id, categoria, materia, mensaje, identificado, nombre, contacto, estado, creado_en')
+    .order('creado_en', { ascending: false })
+    .limit(500);
+
+  if (error) {
+    console.error('Supabase select error (buzon_mensajes):', error);
+    res.status(500).json({ ok: false, error: 'No se pudieron obtener las denuncias' });
+    return;
+  }
+
+  res.status(200).json({ ok: true, mensajes: data });
+}
+
+async function actualizarEstado(req, res) {
+  if (!claveValida(req)) {
+    res.status(401).json({ ok: false, error: 'Clave inválida' });
+    return;
+  }
+
+  const { id, estado } = req.body ?? {};
+
+  if (!id || typeof id !== 'string' || !ESTADOS_VALIDOS.includes(estado)) {
+    res.status(400).json({ ok: false, error: 'Datos inválidos' });
+    return;
+  }
+
+  const { error } = await supabase
+    .from('buzon_mensajes')
+    .update({ estado })
+    .eq('id', id);
+
+  if (error) {
+    console.error('Supabase update error (buzon_mensajes):', error);
+    res.status(500).json({ ok: false, error: 'No se pudo actualizar el estado' });
+    return;
+  }
+
+  res.status(200).json({ ok: true });
+}
+
+export default async function handler(req, res) {
+  if (req.method === 'POST') return crear(req, res);
+  if (req.method === 'GET') return listar(req, res);
+  if (req.method === 'PATCH') return actualizarEstado(req, res);
+
+  res.status(405).json({ ok: false, error: 'Método no permitido' });
 }
