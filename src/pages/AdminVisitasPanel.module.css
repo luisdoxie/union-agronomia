@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #E4DACB;
+  border-radius: 12px;
+  padding: 18px 16px;
+  text-align: center;
+}
+
+.cardLabel {
+  font-size: .78rem;
+  font-weight: 700;
+  color: #6B5843;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin: 0 0 10px;
+}
+
+.cardValue {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #C81E1E;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cardSub {
+  font-size: .72rem;
+  color: #a39a8c;
+  margin: 0 0 10px;
+}
+.cardSub:last-child { margin-bottom: 0; }
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+}

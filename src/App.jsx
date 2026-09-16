@@ -6,8 +6,7 @@ import PlanEstudio from './pages/PlanEstudio';
 import Horarios from './pages/Horarios';
 import Noticias from './pages/Noticias';
 import Buzon from './pages/Buzon';
-import AdminVisitas from './pages/AdminVisitas';
-import AdminBuzon from './pages/AdminBuzon';
+import Admin from './pages/Admin';
 
 export default function App() {
   return (
@@ -19,8 +18,7 @@ export default function App() {
         <Route path="horarios" element={<Horarios />} />
         <Route path="noticias" element={<Noticias />} />
         <Route path="buzon" element={<Buzon />} />
-        <Route path="admin-visitas" element={<AdminVisitas />} />
-        <Route path="admin-buzon" element={<AdminBuzon />} />
+        <Route path="admin" element={<Admin />} />
       </Route>
     </Routes>
   );

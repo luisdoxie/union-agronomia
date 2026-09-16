@@ -1,5 +1,5 @@
 const STORAGE_KEY = 'ua_visitante_id';
-const RUTAS_EXCLUIDAS = ['/admin-visitas'];
+const RUTAS_EXCLUIDAS = ['/admin'];
 
 export function getVisitanteId() {
   try {
