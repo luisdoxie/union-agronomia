@@ -202,6 +202,33 @@
   color: #2f4a24;
 }
 
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.paginaBtn {
+  background: white;
+  border: 1.5px solid #E4DACB;
+  color: #6B5843;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: .82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.paginaBtn:hover:not(:disabled) { border-color: #C81E1E; color: #C81E1E; }
+.paginaBtn:disabled { opacity: .4; cursor: not-allowed; }
+
+.paginaInfo {
+  font-size: .8rem;
+  color: #6b5a4e;
+  font-weight: 600;
+}
+
 @media (max-width: 640px) {
   .page { padding: 0 14px 48px; }
   .panel { padding: 20px 18px; }

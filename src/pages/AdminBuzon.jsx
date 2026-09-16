@@ -16,6 +16,8 @@ const FILTROS = [
   { value: 'otro', label: 'Otro' },
 ];
 
+const POR_PAGINA = 20;
+
 function formatearFecha(iso) {
   return new Date(iso).toLocaleString('es-AR', {
     day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit',
@@ -28,6 +30,7 @@ export default function AdminBuzon() {
   const [mensajes, setMensajes] = useState([]);
   const [filtro, setFiltro] = useState('todas');
   const [pendientesId, setPendientesId] = useState(new Set());
+  const [pagina, setPagina] = useState(1);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -76,9 +79,21 @@ export default function AdminBuzon() {
     }
   }
 
+  function handleFiltro(value) {
+    setFiltro(value);
+    setPagina(1);
+  }
+
   const mensajesFiltrados = filtro === 'todas'
     ? mensajes
     : mensajes.filter(m => m.categoria === filtro);
+
+  const totalPaginas = Math.max(1, Math.ceil(mensajesFiltrados.length / POR_PAGINA));
+  const paginaActual = Math.min(pagina, totalPaginas);
+  const mensajesPagina = mensajesFiltrados.slice(
+    (paginaActual - 1) * POR_PAGINA,
+    paginaActual * POR_PAGINA,
+  );
 
   return (
     <div className={styles.page}>
@@ -113,7 +128,7 @@ export default function AdminBuzon() {
                 key={f.value}
                 type="button"
                 className={`${styles.filtroBtn} ${filtro === f.value ? styles.filtroBtnActivo : ''}`}
-                onClick={() => setFiltro(f.value)}
+                onClick={() => handleFiltro(f.value)}
               >
                 {f.label}
               </button>
@@ -125,7 +140,7 @@ export default function AdminBuzon() {
           )}
 
           <div className={styles.lista}>
-            {mensajesFiltrados.map(m => (
+            {mensajesPagina.map(m => (
               <div key={m.id} className={styles.card}>
                 <div className={styles.cardHeader}>
                   <span className={styles.categoria}>{CATEGORIA_LABELS[m.categoria] || m.categoria}</span>
@@ -156,6 +171,28 @@ export default function AdminBuzon() {
               </div>
             ))}
           </div>
+
+          {totalPaginas > 1 && (
+            <div className={styles.paginacion}>
+              <button
+                type="button"
+                className={styles.paginaBtn}
+                onClick={() => setPagina(p => Math.max(1, p - 1))}
+                disabled={paginaActual === 1}
+              >
+                ‹ Anterior
+              </button>
+              <span className={styles.paginaInfo}>Página {paginaActual} de {totalPaginas}</span>
+              <button
+                type="button"
+                className={styles.paginaBtn}
+                onClick={() => setPagina(p => Math.min(totalPaginas, p + 1))}
+                disabled={paginaActual === totalPaginas}
+              >
+                Siguiente ›
+              </button>
+            </div>
+          )}
         </>
       )}
     </div>
