@@ -1,26 +1,6 @@
 import styles from './Noticias.module.css';
-import fiestaImg from '../assets/FIESTA.jpg';
 
-const EVENTOS = [
-  {
-    id: 'bienvenida-2026',
-    titulo: '🎊❤️ TE INVITAMOS A LA BIENVENIDA DE SEMESTRE ❤️🥳',
-    fecha: 'Viernes 21 de Agosto',
-    hora: 'Desde las 14:00 p.m.',
-    lugar: 'Casa de la Victoria',
-    mapsUrl: 'https://maps.app.goo.gl/46Prz9DgV2eJwnDWA',
-    cuerpo: 'Ven a disfrutar de una noche increíble, no te pierdas de la fiesta 🎉\n\nTe esperamos para celebrar la Bienvenida del Semestre ✨❤️🎈🥳🎊',
-    actividades: [
-      { emoji: '🙂‍↕️', texto: 'La Gran Panchiteada' },
-      { emoji: '🫣',    texto: 'El Bautizo' },
-      { emoji: '💪',    texto: 'Juegos Interactivos' },
-      { emoji: '👑',    texto: 'Concurso de la Mejor Reina' },
-      { emoji: '😂',    texto: 'Concurso de la Mejor Reina Mufa' },
-    ],
-    cierre: '¡Este proyecto es de todos y para todos!🔥',
-    imagen: fiestaImg,
-  },
-];
+const EVENTOS = [];
 
 export default function Noticias() {
   return (
@@ -31,6 +11,9 @@ export default function Noticias() {
       </div>
 
       <div className={styles.feed}>
+        {EVENTOS.length === 0 && (
+          <p className={styles.pageMeta}>No hay noticias por el momento.</p>
+        )}
         {EVENTOS.map(ev => (
           <article key={ev.id} className={styles.card}>
             {/* Banner imagen / placeholder festivo */}
